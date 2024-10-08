@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="it">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes refid="_input_output_8h" local="yes">InputOutput.h</includes>
+    <includes refid="_pila_8h" local="yes">Pila.h</includes>
+    <includes refid="_gestione___file_8h" local="yes">Gestione_File.h</includes>
+    <incdepgraph>
+      <node id="13">
+        <label>Gestione_File.h</label>
+        <link refid="_gestione___file_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Header.h</label>
+        <link refid="_header_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>InputOutput.h</label>
+        <link refid="_input_output_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Pila.h</label>
+        <link refid="_pila_8h"/>
+      </node>
+      <node id="1">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>conio.h</label>
+      </node>
+      <node id="9">
+        <label>ctype.h</label>
+      </node>
+      <node id="7">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="10">
+        <label>time.h</label>
+      </node>
+      <node id="11">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Punto di start dell&apos;applicazione.</para>
+<para><simplesect kind="pre"><para>Nessun requisito preesistente. </para>
+</simplesect>
+<simplesect kind="post"><para>L&apos;applicazione viene avviata correttamente. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/main.c" line="12" column="5" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/main.c" bodystart="12" bodyend="16"/>
+        <references refid="_input_output_8c_1aa8565c0396f63828505d9beb65719849" compoundref="_input_output_8c" startline="65" endline="190">gestoreScelta</references>
+        <references refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" compoundref="_gestione___file_8c" startline="166" endline="184">scrivi_log</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_input_output_8h" kindref="compound">InputOutput.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_pila_8h" kindref="compound">Pila.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gestione___file_8h" kindref="compound">Gestione_File.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>(){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Avvio<sp/>applicazione&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_pila" kindref="compound">Pila</ref><sp/>*P<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_input_output_8c_1aa8565c0396f63828505d9beb65719849" kindref="member">gestoreScelta</ref>(P);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/main.c"/>
+  </compounddef>
+</doxygen>

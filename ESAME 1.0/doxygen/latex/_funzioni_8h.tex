@@ -1,0 +1,177 @@
+\doxysection{Riferimenti per il file Funzioni.\+h}
+\label{_funzioni_8h}\index{Funzioni.h@{Funzioni.h}}
+
+
+Questo file include i prototipi delle funzioni di dominio.  
+
+
+{\ttfamily \#include \"{}header.\+h\"{}}\newline
+{\ttfamily \#include \"{}Pila.\+h\"{}}\newline
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pila} $\ast$ \textbf{ sostituisci} (\textbf{ Pila} $\ast$$\ast$, const char $\ast$, const char $\ast$)
+\item 
+\textbf{ Pila} $\ast$ \textbf{ bubble\+Sort\+Ricorsivo} (\textbf{ Pila} $\ast$$\ast$)
+\item 
+void \textbf{ swap} (\textbf{ Pila} $\ast$, \textbf{ Pila} $\ast$)
+\item 
+int \textbf{ conta\+Vocali} (const char $\ast$)
+\item 
+int \textbf{ conta\+Numeri} (const char $\ast$)
+\item 
+int \textbf{ conta\+Alfanumerico} (const char $\ast$)
+\item 
+\textbf{ Pila} $\ast$ \textbf{ clona\+Pila} (const \textbf{ Pila} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Questo file include i prototipi delle funzioni di dominio. 
+
+\begin{DoxyVersion}{Versione}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+06/07/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autori}
+Calabrese Lorenzo 
+
+Cappelluti Claudia Antonia 
+
+Conforti Francesco 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\label{_funzioni_8h_ac2c933f1d4c2b78c84e4d00bbcd2f6f8} 
+\index{Funzioni.h@{Funzioni.h}!bubbleSortRicorsivo@{bubbleSortRicorsivo}}
+\index{bubbleSortRicorsivo@{bubbleSortRicorsivo}!Funzioni.h@{Funzioni.h}}
+\doxysubsubsection{bubbleSortRicorsivo()}
+{\footnotesize\ttfamily \textbf{ Pila} $\ast$ bubble\+Sort\+Ricorsivo (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{pila }\end{DoxyParamCaption})}
+
+bubble\+Sort\+Ricorsivo restituisce la pila ordinata
+
+bubble\+Sort\+Ricorsivo 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila} & e\textquotesingle{} un puntatore alla struttura \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la pila non deve essere nulla e nemmemeno l\textquotesingle{}elemento successivo 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce una nuova pila ordinata secondo una specifica relazione d\textquotesingle{}ordine 
+\end{DoxyReturn}
+\label{_funzioni_8h_a5eb055045fa479e030dd99bfc1fcbea9} 
+\index{Funzioni.h@{Funzioni.h}!clonaPila@{clonaPila}}
+\index{clonaPila@{clonaPila}!Funzioni.h@{Funzioni.h}}
+\doxysubsubsection{clonaPila()}
+{\footnotesize\ttfamily \textbf{ Pila} $\ast$ clona\+Pila (\begin{DoxyParamCaption}\item[{const \textbf{ Pila} $\ast$}]{pila\+Originale }\end{DoxyParamCaption})}
+
+clona\+Pila crea una copia di una pila passata per riferimento
+
+clona\+Pila 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Originale} & e\textquotesingle{} un puntatore alla struttura \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+restituisce una pila clonata a quella passata per riferimento 
+\end{DoxyReturn}
+\label{_funzioni_8h_a511adb3d36adabf407c6d33215220a04} 
+\index{Funzioni.h@{Funzioni.h}!contaAlfanumerico@{contaAlfanumerico}}
+\index{contaAlfanumerico@{contaAlfanumerico}!Funzioni.h@{Funzioni.h}}
+\doxysubsubsection{contaAlfanumerico()}
+{\footnotesize\ttfamily int conta\+Alfanumerico (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+conta\+Alfanumerico conta gli elementi della stringa ricevuta come parametro che sono delle lettere \+:
+
+conta\+Alfanumerico 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$str} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la stringa non deve essere nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce il numero di caratteri alfanumerici 
+\end{DoxyReturn}
+\label{_funzioni_8h_a39cb913c8901be20bccbe05aabf85abc} 
+\index{Funzioni.h@{Funzioni.h}!contaNumeri@{contaNumeri}}
+\index{contaNumeri@{contaNumeri}!Funzioni.h@{Funzioni.h}}
+\doxysubsubsection{contaNumeri()}
+{\footnotesize\ttfamily int conta\+Numeri (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+conta\+Numeri conta i numeri della stringa ricevuta come parametro
+
+conta\+Numeri 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$str} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la stringa non deve essere nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce il numero dei numeri presenti nella stringa 
+\end{DoxyReturn}
+\label{_funzioni_8h_adab8f5443029b08de107b0bb0cb5a9e7} 
+\index{Funzioni.h@{Funzioni.h}!contaVocali@{contaVocali}}
+\index{contaVocali@{contaVocali}!Funzioni.h@{Funzioni.h}}
+\doxysubsubsection{contaVocali()}
+{\footnotesize\ttfamily int conta\+Vocali (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+conta\+Vocali conta le vocali della stringa ricevuta come parametro
+
+conta\+Vocali 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$str} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la stringa non deve essere nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce il numero di vocali presenti nella stringa 
+\end{DoxyReturn}
+\label{_funzioni_8h_acfbf1e7a8c97ce1f0f67b10bf345433a} 
+\index{Funzioni.h@{Funzioni.h}!sostituisci@{sostituisci}}
+\index{sostituisci@{sostituisci}!Funzioni.h@{Funzioni.h}}
+\doxysubsubsection{sostituisci()}
+{\footnotesize\ttfamily \textbf{ Pila} $\ast$ sostituisci (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{pila,  }\item[{const char $\ast$}]{elemento\+Da\+Sostituire,  }\item[{const char $\ast$}]{nuovo\+Elemento }\end{DoxyParamCaption})}
+
+sostituisci restituisce la pila con gli elementi sostituiti
+
+sostituisci 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila} & e\textquotesingle{}un puntatore alla struct \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$elemento\+Da\+Sostituire} & e\textquotesingle{}un puntatore a carattere \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$nuovo\+Elemento} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la pila e\textquotesingle{} nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce una nuova pila con le dovute sostituzioni 
+\end{DoxyReturn}
+\label{_funzioni_8h_a44ee70f4970dc4d9389a49d5242127c3} 
+\index{Funzioni.h@{Funzioni.h}!swap@{swap}}
+\index{swap@{swap}!Funzioni.h@{Funzioni.h}}
+\doxysubsubsection{swap()}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$}]{a,  }\item[{\textbf{ Pila} $\ast$}]{b }\end{DoxyParamCaption})}
+
+swap esegue lo scambio tra i top delle due pile ricevute come parametro
+
+swap 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$a} & e\textquotesingle{} un puntatore alla struttura \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$b} & e\textquotesingle{} un puntatore alla struttura \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}

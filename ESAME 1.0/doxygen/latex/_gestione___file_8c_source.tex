@@ -1,0 +1,76 @@
+\doxysection{Gestione\+\_\+\+File.\+c}
+\hypertarget{_gestione___file_8c_source}{}\label{_gestione___file_8c_source}\mbox{\hyperlink{_gestione___file_8c}{Vai alla documentazione di questo file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_header_8h}{Header.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pila_8h}{Pila.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_output_8h}{InputOutput.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_gestione___file_8h}{Gestione\_File.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_difensiva_8h}{Difensiva.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00015}\mbox{\hyperlink{_gestione___file_8c_a1168eb7135f375e52e8bd2647f5aceaa}{00015}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_gestione___file_8c_a1168eb7135f375e52e8bd2647f5aceaa}{apriFile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nome\_file,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ modo,\ FILE**\ file)\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00016}00016\ \ \ \ \ *file\ =\ fopen(nome\_file,\ modo);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00017}00017\ \ \ \ \ \textcolor{keywordflow}{if}\ (*file\ ==\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00018}00018\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\ Errore:\ impossibile\ aprire\ il\ file\ '\%s'.\(\backslash\)n"{}},\ nome\_file);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00022}00022\ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00029}\mbox{\hyperlink{_gestione___file_8c_a70e54fed9441b5a1967a8b7ae25611aa}{00029}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_gestione___file_8c_a70e54fed9441b5a1967a8b7ae25611aa}{chiudiFile}}(FILE*\ file)\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{if}(!fclose(file))}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00036}\mbox{\hyperlink{_gestione___file_8c_a2876fce7ec0bafb317cba4d6bc365f5d}{00036}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_gestione___file_8c_a2876fce7ec0bafb317cba4d6bc365f5d}{leggiFile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nomeFile,\ \mbox{\hyperlink{struct_pila}{Pila}}**\ pilaPassata)\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00037}00037\ \ \ \ \ FILE*\ file\ =\ fopen(nomeFile,\ \textcolor{stringliteral}{"{}r"{}});}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00038}00038\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{_difensiva_8c_a794ce04c28daadf80d72788064d326aa}{validatore\_file}}(nomeFile))\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00039}00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pila_8c_a8d3503ea0e3ec93d1e9c27bceff63cbb}{distruggiPila}}(pilaPassata);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00040}00040\ \ \ \ \ \ \ \ \ exit(0);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00041}00041\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00043}00043\ \ \ \ \ \textcolor{keywordtype}{int}\ stringheLette\ =\ 0,\ index;}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00044}00044\ \ \ \ \ \textcolor{keywordtype}{char}\ riga[SIZE\_PILA];}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00045}00045\ \ \ \ \ \textcolor{keywordtype}{char}\ stringa[SIZE\_PILA];}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ len;}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00048}00048\ \ \ \ \ \textcolor{keywordflow}{while}\ (fgets(riga,\ SIZE\_PILA,\ file)\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00049}00049\ \ \ \ \ \ \ \ \ len\ =\ strlen(riga);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00050}00050\ \ \ \ \ \ \ \ \ index\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Rimuove\ i\ trattini\ e\ memorizza\ la\ stringa\ senza\ trattini}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ len;\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (riga[i]\ !=\ \textcolor{charliteral}{'-\/'})\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ stringa[index]\ =\ riga[i];}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ index++;}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00058}00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00059}00059\ \ \ \ \ \ \ \ \ stringa[index]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00061}00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_difensiva_8c_ab7ecab88c7b5e55dd6ff92b6e8a8ee57}{rimuoviNewline}}(stringa);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00063}00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pila_8c_a1a4a58a2d8307f5ae1d19530276b3aa8}{push}}(pilaPassata,\ stringa);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00065}00065\ \ \ \ \ \ \ \ \ stringheLette++;}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00066}00066\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{_gestione___file_8c_a70e54fed9441b5a1967a8b7ae25611aa}{chiudiFile}}(file);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00070}00070\ \ \ \ \ \textcolor{keywordflow}{if}\ (stringheLette\ <\ 4)\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00071}00071\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}|ERRORE|\ -\/\ Il\ file\ in\ input\ contiene\ solo\ \ \%d\ stringhe\ per\ cui\ non\ e'\ possibile\ procedere\ con\ l'elaborazione."{}},stringheLette);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00072}00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_pila_8c_a8d3503ea0e3ec93d1e9c27bceff63cbb}{distruggiPila}}(pilaPassata);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00073}00073\ \ \ \ \ \ \ \ \ exit(0);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00074}00074\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00076}\mbox{\hyperlink{_gestione___file_8c_aa3dfa8e5948cdb26435f0004d1396593}{00076}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_gestione___file_8c_aa3dfa8e5948cdb26435f0004d1396593}{scriviFile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*nomeFile,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*msg)\{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00077}00077\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{_difensiva_8c_a794ce04c28daadf80d72788064d326aa}{validatore\_file}}(nomeFile))\ \{}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00078}00078\ \ \ \ \ \ \ \ \ exit(-\/1);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00079}00079\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00080}00080\ \ \ \ \ FILE*\ file\ =\ fopen(nomeFile,\ \textcolor{stringliteral}{"{}w"{}});}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00081}00081\ \ \ \ \ fprintf(file,\textcolor{stringliteral}{"{}\%s"{}},msg);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00082}00082\ \ \ \ \ \mbox{\hyperlink{_gestione___file_8c_a70e54fed9441b5a1967a8b7ae25611aa}{chiudiFile}}(file);}
+\DoxyCodeLine{\Hypertarget{_gestione___file_8c_source_l00083}00083\ \}}
+
+\end{DoxyCode}

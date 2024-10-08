@@ -1,0 +1,138 @@
+\doxysection{Riferimenti per il file Input\+Output.\+h}
+\label{_input_output_8h}\index{InputOutput.h@{InputOutput.h}}
+
+
+Questo file include tutte i prototipi di Input e Output verso l\textquotesingle{}utente.  
+
+
+{\ttfamily \#include \"{}Header.\+h\"{}}\newline
+{\ttfamily \#include \"{}Pila.\+h\"{}}\newline
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \textbf{ acquisisci\+Nome\+File} (char $\ast$)
+\item 
+char $\ast$ \textbf{ acquisisci\+Stringa} (char $\ast$)
+\item 
+void \textbf{ visualizza\+Menu} ()
+\item 
+void \textbf{ gestore\+Scelta} (\textbf{ Pila} $\ast$)
+\item 
+void \textbf{ visualizza\+Chiusura} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Questo file include tutte i prototipi di Input e Output verso l\textquotesingle{}utente. 
+
+\begin{DoxyVersion}{Versione}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+06/07/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autori}
+Calabrese lorenzo 
+
+Cappelluti Claudia Antonia 
+
+Conforti Francesco 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\label{_input_output_8h_a79feada1bfead09cc72d3f020ef6cc7f} 
+\index{InputOutput.h@{InputOutput.h}!acquisisciNomeFile@{acquisisciNomeFile}}
+\index{acquisisciNomeFile@{acquisisciNomeFile}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{acquisisciNomeFile()}
+{\footnotesize\ttfamily char $\ast$ acquisisci\+Nome\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{nome\+File }\end{DoxyParamCaption})}
+
+acquisiscinomefile acquisisce in input il nome del file
+
+Acquisisce il nome del file di input dall\textquotesingle{}utente.
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$nome\+File} & Il puntatore al buffer in cui memorizzare il nome del file. Deve essere inizializzato con una dimensione sufficiente per contenere il nome del file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il nome del file viene controllato dalla funzione validatore\+\_\+file. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il nome del file di input viene acquisito correttamente dall\textquotesingle{}utente e restituito come stringa. 
+\end{DoxyPostcond}
+\label{_input_output_8h_a3f00148d8abb17c657d2e31e691ed109} 
+\index{InputOutput.h@{InputOutput.h}!acquisisciStringa@{acquisisciStringa}}
+\index{acquisisciStringa@{acquisisciStringa}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{acquisisciStringa()}
+{\footnotesize\ttfamily char $\ast$ acquisisci\+Stringa (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+acquisisci\+Stringa acquisisce una stringa dalla tastiera
+
+Acquisisce una stringa dall\textquotesingle{}utente.
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$str} & e\textquotesingle{} il puntatore al buffer in cui memorizzare la stringa acquisita. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+La stringa viene controllata dalla funzione controllo stringa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+La stringa viene acquisita correttamente dall\textquotesingle{}utente, controllata e restituita come risultato. 
+\end{DoxyPostcond}
+\label{_input_output_8h_a83a394df172562905f1aaa353d521c3c} 
+\index{InputOutput.h@{InputOutput.h}!gestoreScelta@{gestoreScelta}}
+\index{gestoreScelta@{gestoreScelta}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{gestoreScelta()}
+{\footnotesize\ttfamily void gestore\+Scelta (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$}]{pila }\end{DoxyParamCaption})}
+
+gestore\+Scelta è una procedura che gestisce la scelta dell\textquotesingle{}utente
+
+Gestisce la scelta dell\textquotesingle{}utente e esegue le operazioni corrispondenti.
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila} & La pila di dati su cui eseguire le operazioni.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+La pila deve essere valida e correttamente inizializzata. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Le operazioni selezionate dall\textquotesingle{}utente vengono eseguite correttamente sulla pila. La memoria allocata per le pile dopo l\textquotesingle{}utilizzo viene rilasciata. 
+\end{DoxyPostcond}
+\label{_input_output_8h_a366895b082490fb1505481432fa1cb05} 
+\index{InputOutput.h@{InputOutput.h}!visualizzaChiusura@{visualizzaChiusura}}
+\index{visualizzaChiusura@{visualizzaChiusura}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{visualizzaChiusura()}
+{\footnotesize\ttfamily void visualizza\+Chiusura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+visualizza\+Chiusura e\textquotesingle{} un\textquotesingle{}animazione di chiusura del gestionale
+
+Visualizza il messaggio di chiusura dell\textquotesingle{}applicazione, esegue un countdown visivo e registra la chiusura nel file di log.
+
+\begin{DoxyPrecond}{Precondizione}
+L\textquotesingle{}output standard (stdout) deve essere disponibile per la stampa del messaggio di chiusura. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+La chiusura dell\textquotesingle{}applicazione viene registrata nel file di log. 
+\end{DoxyPostcond}
+\label{_input_output_8h_a6e78db0bf1ff7ea85e626d3a91428799} 
+\index{InputOutput.h@{InputOutput.h}!visualizzaMenu@{visualizzaMenu}}
+\index{visualizzaMenu@{visualizzaMenu}!InputOutput.h@{InputOutput.h}}
+\doxysubsubsection{visualizzaMenu()}
+{\footnotesize\ttfamily void visualizza\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+visualizza\+Menu e\textquotesingle{} una funzione che permette di visualizzare il menu di scelta
+
+Visualizza il menu di scelta dell\textquotesingle{}applicazione.
+
+\begin{DoxyPrecond}{Precondizione}
+L\textquotesingle{}output standard (stdout) deve essere disponibile per la stampa del menu. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondizione}
+Il menu viene visualizzato correttamente sulla console. 
+\end{DoxyPostcond}

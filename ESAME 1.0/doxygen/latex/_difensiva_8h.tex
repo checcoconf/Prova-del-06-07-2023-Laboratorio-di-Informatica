@@ -1,0 +1,162 @@
+\doxysection{Riferimenti per il file Difensiva.\+h}
+\label{_difensiva_8h}\index{Difensiva.h@{Difensiva.h}}
+
+
+Questo file include delle funzioni utili per la programmazione difensiva.  
+
+
+{\ttfamily \#include \"{}header.\+h\"{}}\newline
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ valida\+\_\+nome\+\_\+file} (const char $\ast$)
+\item 
+bool \textbf{ valida\+\_\+estensione\+\_\+file} (const char $\ast$)
+\item 
+bool \textbf{ validatore\+\_\+file} (const char $\ast$)
+\item 
+void \textbf{ rimuovi\+Newline} (char $\ast$)
+\item 
+char $\ast$ \textbf{ controllo\+Stringa} (char $\ast$stringa)
+\item 
+void \textbf{ pulisci\+File} (const char $\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Questo file include delle funzioni utili per la programmazione difensiva. 
+
+\begin{DoxyVersion}{Versione}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+06/07/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autori}
+Calabrese Lorenzo 
+
+Cappelluti Claudia Antonia 
+
+Conforti Francesco 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\label{_difensiva_8h_a631d4f696e52cb1c67a3756a7fa86fd7} 
+\index{Difensiva.h@{Difensiva.h}!controlloStringa@{controlloStringa}}
+\index{controlloStringa@{controlloStringa}!Difensiva.h@{Difensiva.h}}
+\doxysubsubsection{controlloStringa()}
+{\footnotesize\ttfamily char $\ast$ controllo\+Stringa (\begin{DoxyParamCaption}\item[{char $\ast$}]{stringa }\end{DoxyParamCaption})}
+
+controllo\+Stringa prende in input la stringa ed esegue un controllo sulla correttezza
+
+controllo\+Stringa 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em stringa} & e\textquotesingle{} un puntatore a carattere,essa rappresenta una stringa non formattata dal \textquotesingle{}-\/\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+stringa non e\textquotesingle{} nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+viene restituita una stringa puntatore a carattere quando la stringa viene inserita correttamente 
+\end{DoxyReturn}
+\label{_difensiva_8h_a3bde31cb797dc2eed3eb26da5bcf136c} 
+\index{Difensiva.h@{Difensiva.h}!pulisciFile@{pulisciFile}}
+\index{pulisciFile@{pulisciFile}!Difensiva.h@{Difensiva.h}}
+\doxysubsubsection{pulisciFile()}
+{\footnotesize\ttfamily void pulisci\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nome\+File }\end{DoxyParamCaption})}
+
+pulisci\+File è una procedura che rimuove le righe del file
+
+pulisci\+File 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$nome\+File} & e\textquotesingle{} un puntatore a carattere ,esso rappresenta il nome del file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+il nome del file non e\textquotesingle{} nullo 
+\end{DoxyPrecond}
+\label{_difensiva_8h_ad5c05d2d8fdb57cfdf80e814b0032882} 
+\index{Difensiva.h@{Difensiva.h}!rimuoviNewline@{rimuoviNewline}}
+\index{rimuoviNewline@{rimuoviNewline}!Difensiva.h@{Difensiva.h}}
+\doxysubsubsection{rimuoviNewline()}
+{\footnotesize\ttfamily void rimuovi\+Newline (\begin{DoxyParamCaption}\item[{char $\ast$}]{stringa }\end{DoxyParamCaption})}
+
+rimuovi\+Newline prende in input la stringa sostituisce \"{}\textbackslash{}\textbackslash{}n\"{} con \"{}\textbackslash{}\textbackslash{}n\"{}
+
+rimuovi\+Newline 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em stringa} & e\textquotesingle{} un puntatore a carattere ,essa rappresenta una stringa non formattata dal \textquotesingle{}-\/\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+stringa non e\textquotesingle{} nulla 
+\end{DoxyPrecond}
+\label{_difensiva_8h_ae415a8ca8b2170b0e64456893105b430} 
+\index{Difensiva.h@{Difensiva.h}!valida\_estensione\_file@{valida\_estensione\_file}}
+\index{valida\_estensione\_file@{valida\_estensione\_file}!Difensiva.h@{Difensiva.h}}
+\doxysubsubsection{valida\_estensione\_file()}
+{\footnotesize\ttfamily bool valida\+\_\+estensione\+\_\+file (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nome\+\_\+file }\end{DoxyParamCaption})}
+
+valida\+\_\+estensione\+\_\+file prende in input il nome del file inserito dall\textquotesingle{} utente~\newline
+ e verifica che l\textquotesingle{}estensione del file sia .txt
+
+valida\+\_\+estensione\+\_\+file 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$nome\+\_\+file} & e\textquotesingle{}un puntatore a carattere,esso rappresenta il nome del file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+nome\+\_\+file e\textquotesingle{}una stringa non nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+1 se il file ha estensione .txt 
+
+0 se il file non presenta l\textquotesingle{}estensione 
+\end{DoxyReturn}
+\label{_difensiva_8h_ab6f8e2cfb3f0bb9d091c65917577618e} 
+\index{Difensiva.h@{Difensiva.h}!valida\_nome\_file@{valida\_nome\_file}}
+\index{valida\_nome\_file@{valida\_nome\_file}!Difensiva.h@{Difensiva.h}}
+\doxysubsubsection{valida\_nome\_file()}
+{\footnotesize\ttfamily bool valida\+\_\+nome\+\_\+file (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nome\+File }\end{DoxyParamCaption})}
+
+valida\+\_\+nome\+\_\+file prende in input il nome del file inserito dall\textquotesingle{}utente
+
+valida\+\_\+nome\+\_\+file 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$nome\+File} & e\textquotesingle{}un puntatore a carattere,esso rappresenta il nome del file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+true se il nome del file rispetta la dimensione e non presenta caratteri non ammessi 
+
+false se il nome del file non rispetta la dimensione e/o i caratteri non ammessi 
+\end{DoxyReturn}
+\label{_difensiva_8h_ac81908b3568c626d142a5fc3d1f0cb84} 
+\index{Difensiva.h@{Difensiva.h}!validatore\_file@{validatore\_file}}
+\index{validatore\_file@{validatore\_file}!Difensiva.h@{Difensiva.h}}
+\doxysubsubsection{validatore\_file()}
+{\footnotesize\ttfamily bool validatore\+\_\+file (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nome\+File }\end{DoxyParamCaption})}
+
+validatore\+\_\+file prende in input il nome del file inserito dall\textquotesingle{}utente~\newline
+ e verificano la validazione del file
+
+validatore\+\_\+file 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$nome\+File} & e\textquotesingle{}un puntatore a carattere,esso rappresenta il nome del file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+nome\+\_\+file e\textquotesingle{} una stringa non nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+true se il nome del file presenta un nome corretto,se l\textquotesingle{}estensione e il percorso file sono corretti 
+
+false se il nome del file non presenta un nome corretto, se l\textquotesingle{} estensione e il percorso file non sono corretti 
+\end{DoxyReturn}
+Verifica nome\+File e che l\textquotesingle{}estensione del file sia .txt
+
+Valida Estensione File
+
+Se il percorso del file fornito e\textquotesingle{} corretto, allora verifico la sua esistenza effettiva

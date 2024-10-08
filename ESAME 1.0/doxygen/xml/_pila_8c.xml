@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="it">
+  <compounddef id="_pila_8c" kind="file" language="C++">
+    <compoundname>Pila.c</compoundname>
+    <includes refid="_header_8h" local="yes">Header.h</includes>
+    <includes refid="_pila_8h" local="yes">Pila.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Header.h</label>
+        <link refid="_header_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Pila.c</label>
+        <link refid="_pila_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Pila.h</label>
+        <link refid="_pila_8h"/>
+      </node>
+      <node id="7">
+        <label>conio.h</label>
+      </node>
+      <node id="8">
+        <label>ctype.h</label>
+      </node>
+      <node id="6">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="9">
+        <label>time.h</label>
+      </node>
+      <node id="10">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_pila_8c_1a1a4a58a2d8307f5ae1d19530276b3aa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void push</definition>
+        <argsstring>(Pila **pilaPassata, const char *dato)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="struct_pila" kindref="compound">Pila</ref> **</type>
+          <declname>pilaPassata</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.c" line="22" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.c" bodystart="22" bodyend="33"/>
+        <references refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" compoundref="_pila_8h" startline="24">Pila::dato</references>
+        <references refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" compoundref="_pila_8h" startline="25">Pila::nextPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stampaPila</definition>
+        <argsstring>(Pila *pilaCorrente)</argsstring>
+        <name>stampaPila</name>
+        <param>
+          <type><ref refid="struct_pila" kindref="compound">Pila</ref> *</type>
+          <declname>pilaCorrente</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stampaPila <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pilaCorrente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore che punta alla pila </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Il puntatore alla pila non deve essere NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.c" line="40" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.c" bodystart="40" bodyend="51"/>
+        <references refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" compoundref="_pila_8h" startline="24">Pila::dato</references>
+        <references refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" compoundref="_pila_8h" startline="25">Pila::nextPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="_pila_8c_1a6950fe96e75654670b24ae382d0b74ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void invertiPila</definition>
+        <argsstring>(Pila **pilaPassata)</argsstring>
+        <name>invertiPila</name>
+        <param>
+          <type><ref refid="struct_pila" kindref="compound">Pila</ref> **</type>
+          <declname>pilaPassata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>invertiPila <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pilaPassata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore al puntatore della <ref refid="struct_pila" kindref="compound">Pila</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Il puntatore alla pila non deve essere NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.c" line="58" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.c" bodystart="58" bodyend="68"/>
+        <references refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" compoundref="_pila_8h" startline="25">Pila::nextPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="_pila_8c_1aa98f13b874d7e30dce74c58f0424e2d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void svuotaPila</definition>
+        <argsstring>(Pila **pila)</argsstring>
+        <name>svuotaPila</name>
+        <param>
+          <type><ref refid="struct_pila" kindref="compound">Pila</ref> **</type>
+          <declname>pila</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>svuotaPila <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pilaPassata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore al puntatore della <ref refid="struct_pila" kindref="compound">Pila</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Il puntatore alla pila non deve essere NULL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.c" line="75" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.c" bodystart="75" bodyend="85"/>
+        <references refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" compoundref="_pila_8h" startline="25">Pila::nextPtr</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Questo file include tutte le funzioni di gestione della pila. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>06/07/2023 </para>
+</simplesect>
+<simplesect kind="authors"><para>Calabrese lorenzo </para>
+</simplesect>
+<simplesect kind="authors"><para>Cappelluti Claudia Antonia </para>
+</simplesect>
+<simplesect kind="authors"><para>Conforti Francesco /**</para>
+</simplesect>
+/** Push <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pilaPassata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore al puntatore della <ref refid="struct_pila" kindref="compound">Pila</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*dato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; una stringa </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Il puntatore alla pila non deve essere NULL </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_header_8h" kindref="compound">Header.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_pila_8h" kindref="compound">Pila.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="_pila_8c_1a1a4a58a2d8307f5ae1d19530276b3aa8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_pila_8c_1a1a4a58a2d8307f5ae1d19530276b3aa8" kindref="member">push</ref>(<ref refid="struct_pila" kindref="compound">Pila</ref>**<sp/>pilaPassata,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>dato)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/>P<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_pila" kindref="compound">Pila</ref>));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(P<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;|ERRORE|<sp/>-<sp/>L&apos;elemento<sp/>non<sp/>e&apos;<sp/>stato<sp/>inserito!\nNon<sp/>c&apos;è memoria.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy(P-&gt;<ref refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" kindref="member">dato</ref>,<sp/>dato,<sp/>SIZE_PILA<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>P-&gt;<ref refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" kindref="member">dato</ref>[SIZE_PILA<sp/>-<sp/>1]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//aggiunge<sp/>lo<sp/>\0<sp/>a<sp/>fine<sp/>carattere</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>P-&gt;<ref refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" kindref="member">nextPtr</ref><sp/>=<sp/>*pilaPassata;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>*pilaPassata<sp/>=<sp/>P;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" kindref="member">stampaPila</ref>(<ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/>pilaCorrente){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pilaCorrente<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;La<sp/>Pila<sp/>e&apos;<sp/>vuota.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(pilaCorrente<sp/>!=<sp/>NULL){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s<sp/>--&gt;<sp/>&quot;</highlight><highlight class="normal">,pilaCorrente-&gt;<ref refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" kindref="member">dato</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pilaCorrente<sp/>=<sp/>pilaCorrente-&gt;<ref refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" kindref="member">nextPtr</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;NULL\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_pila_8c_1a6950fe96e75654670b24ae382d0b74ec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_pila_8c_1a6950fe96e75654670b24ae382d0b74ec" kindref="member">invertiPila</ref>(<ref refid="struct_pila" kindref="compound">Pila</ref>**<sp/>pilaPassata)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/>pilaInvertita<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*pilaPassata<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/>nodoCorrente<sp/>=<sp/>*pilaPassata;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pilaPassata<sp/>=<sp/>nodoCorrente-&gt;<ref refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" kindref="member">nextPtr</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodoCorrente-&gt;<ref refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" kindref="member">nextPtr</ref><sp/>=<sp/>pilaInvertita;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pilaInvertita<sp/>=<sp/>nodoCorrente;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>*pilaPassata<sp/>=<sp/>pilaInvertita;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_pila_8c_1aa98f13b874d7e30dce74c58f0424e2d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_pila_8c_1aa98f13b874d7e30dce74c58f0424e2d8" kindref="member">svuotaPila</ref>(<ref refid="struct_pila" kindref="compound">Pila</ref>**<sp/>pila)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/>nodoCorrente<sp/>=<sp/>*pila;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(nodoCorrente<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/>nodoSuccessivo<sp/>=<sp/>nodoCorrente-&gt;<ref refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" kindref="member">nextPtr</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(nodoCorrente);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodoCorrente<sp/>=<sp/>nodoSuccessivo;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>*pila<sp/>=<sp/>NULL;<sp/></highlight><highlight class="comment">//<sp/>Imposta<sp/>il<sp/>puntatore<sp/>alla<sp/>pila<sp/>come<sp/>NULL<sp/>per<sp/>indicare<sp/>una<sp/>pila<sp/>vuota</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.c"/>
+  </compounddef>
+</doxygen>

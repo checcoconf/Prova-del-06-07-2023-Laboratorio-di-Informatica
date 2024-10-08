@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1688802492 source:c:\users\franc\desktop\esame 1.0\esame 1.0\difensiva.c
+	"Difensiva.h"
+	"Gestione_File.h"
+
+1688802514 c:\users\franc\desktop\esame 1.0\esame 1.0\difensiva.h
+	"header.h"
+
+1688802528 c:\users\franc\desktop\esame 1.0\esame 1.0\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	<conio.h>
+	<ctype.h>
+	<time.h>
+	<unistd.h>
+
+1688802522 c:\users\franc\desktop\esame 1.0\esame 1.0\gestione_file.h
+	"Header.h"
+	"Pila.h"
+
+1688802538 c:\users\franc\desktop\esame 1.0\esame 1.0\pila.h
+
+1688802490 source:c:\users\franc\desktop\esame 1.0\esame 1.0\funzioni.c
+	"header.h"
+	"Funzioni.h"
+	"InputOutput.h."
+	"Pila.h"
+
+1688802518 c:\users\franc\desktop\esame 1.0\esame 1.0\funzioni.h
+	"header.h"
+	"Pila.h"
+
+1688802496 source:c:\users\franc\desktop\esame 1.0\esame 1.0\gestione_file.c
+	"Header.h"
+	"Pila.h"
+	"Gestione_File.h"
+	"Difensiva.h"
+
+1688802500 source:c:\users\franc\desktop\esame 1.0\esame 1.0\inputoutput.c
+	"Header.h"
+	"Pila.h"
+	"InputOutput.h"
+	"Gestione_File.h"
+	"Difensiva.h"
+	"Funzioni.h"
+
+1688802532 c:\users\franc\desktop\esame 1.0\esame 1.0\inputoutput.h
+	"Header.h"
+	"Pila.h"
+
+1688800450 source:c:\users\franc\desktop\esame 1.0\esame 1.0\main.c
+	"InputOutput.h"
+	"Pila.h"
+	"Gestione_File.h"
+
+1688802508 source:c:\users\franc\desktop\esame 1.0\esame 1.0\pila.c
+	"Header.h"
+	"Pila.h"
+

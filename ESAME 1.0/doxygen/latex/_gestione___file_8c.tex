@@ -1,0 +1,162 @@
+\doxysection{Riferimenti per il file Gestione\+\_\+\+File.\+c}
+\label{_gestione___file_8c}\index{Gestione\_File.c@{Gestione\_File.c}}
+
+
+Questo file include tutte le funzioni per la gestione del file.  
+
+
+{\ttfamily \#include \"{}Header.\+h\"{}}\newline
+{\ttfamily \#include \"{}Pila.\+h\"{}}\newline
+{\ttfamily \#include \"{}Gestione\+\_\+\+File.\+h\"{}}\newline
+{\ttfamily \#include \"{}Difensiva.\+h\"{}}\newline
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ apri\+File} (const char $\ast$nome\+\_\+file, const char $\ast$modo, FILE $\ast$$\ast$file)
+\item 
+int \textbf{ chiudi\+File} (FILE $\ast$file)
+\item 
+void \textbf{ leggi\+File} (const char $\ast$nome\+File, \textbf{ Pila} $\ast$$\ast$pila\+Passata)
+\item 
+void \textbf{ scrivi\+File} (const char $\ast$nome\+File, const char $\ast$msg, const char $\ast$modo)
+\item 
+void \textbf{ scrivi\+File\+Formattato} (const char $\ast$nome\+File, \textbf{ Pila} $\ast$pila)
+\item 
+void \textbf{ scrivi\+\_\+log} (const char $\ast$messaggio)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Questo file include tutte le funzioni per la gestione del file. 
+
+\begin{DoxyVersion}{Versione}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+06/07/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autori}
+Calabrese Lorenzo 
+
+Cappelluti Claudia Antonia 
+
+Conforti Francesco 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\label{_gestione___file_8c_a1168eb7135f375e52e8bd2647f5aceaa} 
+\index{Gestione\_File.c@{Gestione\_File.c}!apriFile@{apriFile}}
+\index{apriFile@{apriFile}!Gestione\_File.c@{Gestione\_File.c}}
+\doxysubsubsection{apriFile()}
+{\footnotesize\ttfamily int apri\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nome\+\_\+file,  }\item[{const char $\ast$}]{modo,  }\item[{FILE $\ast$$\ast$}]{file }\end{DoxyParamCaption})}
+
+apri\+File 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$nome\+\_\+file} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$modo} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$file} & e\textquotesingle{} un puntatore al file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+nome\+\_\+file non e\textquotesingle{} una stringa non nulla. 
+
+nodo e\textquotesingle{} una stringa non nulla. 
+
+file e\textquotesingle{} un puntatore al puntatore del file e non deve essere NULL. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce 1 se il file e\textquotesingle{} stato aperto con successo 
+
+restituisce 0 se il file non e\textquotesingle{} stato aperto con successo 
+\end{DoxyReturn}
+\label{_gestione___file_8c_a70e54fed9441b5a1967a8b7ae25611aa} 
+\index{Gestione\_File.c@{Gestione\_File.c}!chiudiFile@{chiudiFile}}
+\index{chiudiFile@{chiudiFile}!Gestione\_File.c@{Gestione\_File.c}}
+\doxysubsubsection{chiudiFile()}
+{\footnotesize\ttfamily int chiudi\+File (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+chiudi\+File 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$file} & e\textquotesingle{} un puntatore al file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondizione}
+ritorna 0 o 1. 
+\end{DoxyPostcond}
+\label{_gestione___file_8c_a2876fce7ec0bafb317cba4d6bc365f5d} 
+\index{Gestione\_File.c@{Gestione\_File.c}!leggiFile@{leggiFile}}
+\index{leggiFile@{leggiFile}!Gestione\_File.c@{Gestione\_File.c}}
+\doxysubsubsection{leggiFile()}
+{\footnotesize\ttfamily void leggi\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nome\+File,  }\item[{\textbf{ Pila} $\ast$$\ast$}]{pila\+Passata }\end{DoxyParamCaption})}
+
+leggi\+File
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$nome\+File} & e\textquotesingle{} un puntatore al nome del file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Passata} & e\textquotesingle{} un puntatore al puntatore di una pila in cui memorizzare le stringhe lette. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+$\ast$nome\+\_\+file una stringa non nulla 
+\end{DoxyPrecond}
+\label{_gestione___file_8c_a62b0996e46a5853c3937354c84e153c6} 
+\index{Gestione\_File.c@{Gestione\_File.c}!scrivi\_log@{scrivi\_log}}
+\index{scrivi\_log@{scrivi\_log}!Gestione\_File.c@{Gestione\_File.c}}
+\doxysubsubsection{scrivi\_log()}
+{\footnotesize\ttfamily void scrivi\+\_\+log (\begin{DoxyParamCaption}\item[{const char $\ast$}]{messaggio }\end{DoxyParamCaption})}
+
+Scrive un messaggio di log in un file di log.
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$messaggio} & e\textquotesingle{} il messaggio da scrivere nel file di log.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il file di log \"{}\+Log.\+txt\"{} deve essere accessibile e scrivibile. 
+\end{DoxyPrecond}
+\label{_gestione___file_8c_af89ed7e3e33f8526f4c5fbdb9b13c648} 
+\index{Gestione\_File.c@{Gestione\_File.c}!scriviFile@{scriviFile}}
+\index{scriviFile@{scriviFile}!Gestione\_File.c@{Gestione\_File.c}}
+\doxysubsubsection{scriviFile()}
+{\footnotesize\ttfamily void scrivi\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nome\+File,  }\item[{const char $\ast$}]{msg,  }\item[{const char $\ast$}]{modo }\end{DoxyParamCaption})}
+
+Scrive un messaggio in un file specificato.
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$nome\+File} & e\textquotesingle{} il nome del file in cui scrivere il messaggio. \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$msg} & e\textquotesingle{} messaggio da scrivere nel file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$modo} & e\textquotesingle{} la modalità di apertura del file (\"{}r\"{}, \"{}w\"{}, \"{}a\"{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il file specificato deve essere aperto correttamente e accessibile in base alla modalità specificata. 
+\end{DoxyPrecond}
+\label{_gestione___file_8c_a96e75ff208f3c092478847945f49137d} 
+\index{Gestione\_File.c@{Gestione\_File.c}!scriviFileFormattato@{scriviFileFormattato}}
+\index{scriviFileFormattato@{scriviFileFormattato}!Gestione\_File.c@{Gestione\_File.c}}
+\doxysubsubsection{scriviFileFormattato()}
+{\footnotesize\ttfamily void scrivi\+File\+Formattato (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nome\+File,  }\item[{\textbf{ Pila} $\ast$}]{pila }\end{DoxyParamCaption})}
+
+Scrive il contenuto di una pila formattata in un file specificato.
+
+
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$nome\+File} & e\textquotesingle{} il nome del file in cui scrivere il contenuto formattato. \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$pila} & e\textquotesingle{} la pila contenente i dati da scrivere nel file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il file specificato deve essere aperto correttamente e accessibile in modalità di scrittura. 
+
+La pila deve essere valida e correttamente inizializzata. 
+\end{DoxyPrecond}

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="it">
+  <compound refid="struct_pila" kind="struct"><name>Pila</name>
+    <member refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" kind="variable"><name>dato</name></member>
+    <member refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" kind="variable"><name>nextPtr</name></member>
+  </compound>
+  <compound refid="_difensiva_8c" kind="file"><name>Difensiva.c</name>
+    <member refid="_difensiva_8c_1a4d0e9ca878fb09a4a6cc6cc96ccbb402" kind="function"><name>valida_nome_file</name></member>
+    <member refid="_difensiva_8c_1ac22614fc21d2aa50d1d5a9b24981481d" kind="function"><name>valida_estensione_file</name></member>
+    <member refid="_difensiva_8c_1a794ce04c28daadf80d72788064d326aa" kind="function"><name>validatore_file</name></member>
+    <member refid="_difensiva_8c_1ab7ecab88c7b5e55dd6ff92b6e8a8ee57" kind="function"><name>rimuoviNewline</name></member>
+    <member refid="_difensiva_8c_1a631d4f696e52cb1c67a3756a7fa86fd7" kind="function"><name>controlloStringa</name></member>
+    <member refid="_difensiva_8c_1a5fee0100cdbdb4d08c2186c1762ce801" kind="function"><name>pulisciFile</name></member>
+  </compound>
+  <compound refid="_difensiva_8h" kind="file"><name>Difensiva.h</name>
+    <member refid="_difensiva_8h_1ab6f8e2cfb3f0bb9d091c65917577618e" kind="function"><name>valida_nome_file</name></member>
+    <member refid="_difensiva_8h_1ae415a8ca8b2170b0e64456893105b430" kind="function"><name>valida_estensione_file</name></member>
+    <member refid="_difensiva_8h_1ac81908b3568c626d142a5fc3d1f0cb84" kind="function"><name>validatore_file</name></member>
+    <member refid="_difensiva_8h_1ad5c05d2d8fdb57cfdf80e814b0032882" kind="function"><name>rimuoviNewline</name></member>
+    <member refid="_difensiva_8h_1a631d4f696e52cb1c67a3756a7fa86fd7" kind="function"><name>controlloStringa</name></member>
+    <member refid="_difensiva_8h_1a3bde31cb797dc2eed3eb26da5bcf136c" kind="function"><name>pulisciFile</name></member>
+  </compound>
+  <compound refid="_funzioni_8c" kind="file"><name>Funzioni.c</name>
+    <member refid="_funzioni_8c_1a58bad8ca508eebb0e11542f293215213" kind="function"><name>sostituisci</name></member>
+    <member refid="_funzioni_8c_1a655f67b2984bff476d1f97750a5764d8" kind="function"><name>contaAlfanumerico</name></member>
+    <member refid="_funzioni_8c_1ae386eaa89c4fb31c0159d9e2dc54c97a" kind="function"><name>contaNumeri</name></member>
+    <member refid="_funzioni_8c_1a9d9b4cec3afa3def0a78b2fdfde0418a" kind="function"><name>contaVocali</name></member>
+    <member refid="_funzioni_8c_1a4df0a9304b9de6f66dc16e022fd6bdf3" kind="function"><name>swap</name></member>
+    <member refid="_funzioni_8c_1a90609c92cfde3ffc9b213de5b781228c" kind="function"><name>clonaPila</name></member>
+    <member refid="_funzioni_8c_1a2e1889b0fa0a7ab25a627c7c1135b43a" kind="function"><name>bubbleSortRicorsivo</name></member>
+  </compound>
+  <compound refid="_funzioni_8h" kind="file"><name>Funzioni.h</name>
+    <member refid="_funzioni_8h_1acfbf1e7a8c97ce1f0f67b10bf345433a" kind="function"><name>sostituisci</name></member>
+    <member refid="_funzioni_8h_1ac2c933f1d4c2b78c84e4d00bbcd2f6f8" kind="function"><name>bubbleSortRicorsivo</name></member>
+    <member refid="_funzioni_8h_1a44ee70f4970dc4d9389a49d5242127c3" kind="function"><name>swap</name></member>
+    <member refid="_funzioni_8h_1adab8f5443029b08de107b0bb0cb5a9e7" kind="function"><name>contaVocali</name></member>
+    <member refid="_funzioni_8h_1a39cb913c8901be20bccbe05aabf85abc" kind="function"><name>contaNumeri</name></member>
+    <member refid="_funzioni_8h_1a511adb3d36adabf407c6d33215220a04" kind="function"><name>contaAlfanumerico</name></member>
+    <member refid="_funzioni_8h_1a5eb055045fa479e030dd99bfc1fcbea9" kind="function"><name>clonaPila</name></member>
+  </compound>
+  <compound refid="_gestione___file_8c" kind="file"><name>Gestione_File.c</name>
+    <member refid="_gestione___file_8c_1a1168eb7135f375e52e8bd2647f5aceaa" kind="function"><name>apriFile</name></member>
+    <member refid="_gestione___file_8c_1a70e54fed9441b5a1967a8b7ae25611aa" kind="function"><name>chiudiFile</name></member>
+    <member refid="_gestione___file_8c_1a2876fce7ec0bafb317cba4d6bc365f5d" kind="function"><name>leggiFile</name></member>
+    <member refid="_gestione___file_8c_1af89ed7e3e33f8526f4c5fbdb9b13c648" kind="function"><name>scriviFile</name></member>
+    <member refid="_gestione___file_8c_1a96e75ff208f3c092478847945f49137d" kind="function"><name>scriviFileFormattato</name></member>
+    <member refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kind="function"><name>scrivi_log</name></member>
+  </compound>
+  <compound refid="_gestione___file_8h" kind="file"><name>Gestione_File.h</name>
+    <member refid="_gestione___file_8h_1a141866d10a666adba73e8c42ab70cbb3" kind="function"><name>apriFile</name></member>
+    <member refid="_gestione___file_8h_1a36d548628b25f7c9af45c135e2deaf4b" kind="function"><name>leggiFile</name></member>
+    <member refid="_gestione___file_8h_1a803d9b0edd6a70ddc315bb3c098475fc" kind="function"><name>chiudiFile</name></member>
+    <member refid="_gestione___file_8h_1a6cc74e1b64d85b2ba6f05d2b3582f03a" kind="function"><name>scriviFile</name></member>
+    <member refid="_gestione___file_8h_1a16ccd2b433124f08a96f5dbbf797cef5" kind="function"><name>scriviFileFormattato</name></member>
+    <member refid="_gestione___file_8h_1aaa793b4d054a7120e95dd62b89f5ea63" kind="function"><name>scrivi_log</name></member>
+  </compound>
+  <compound refid="_header_8h" kind="file"><name>Header.h</name>
+    <member refid="_header_8h_1adb6bba367ed4fc2c16ca58de84a34447" kind="define"><name>SIZE_NOME_FILE</name></member>
+    <member refid="_header_8h_1a278694c2333c9826f21ddd2c2d220f66" kind="define"><name>MIN_SIZE</name></member>
+  </compound>
+  <compound refid="_input_output_8c" kind="file"><name>InputOutput.c</name>
+    <member refid="_input_output_8c_1a6e78db0bf1ff7ea85e626d3a91428799" kind="function"><name>visualizzaMenu</name></member>
+    <member refid="_input_output_8c_1a366895b082490fb1505481432fa1cb05" kind="function"><name>visualizzaChiusura</name></member>
+    <member refid="_input_output_8c_1aa8565c0396f63828505d9beb65719849" kind="function"><name>gestoreScelta</name></member>
+    <member refid="_input_output_8c_1a49e4222793afb123ae9a290b87c829f2" kind="function"><name>acquisisciNomeFile</name></member>
+    <member refid="_input_output_8c_1a22bbc787309e15c25f5f5ff52c6f87e9" kind="function"><name>acquisisciStringa</name></member>
+  </compound>
+  <compound refid="_input_output_8h" kind="file"><name>InputOutput.h</name>
+    <member refid="_input_output_8h_1a79feada1bfead09cc72d3f020ef6cc7f" kind="function"><name>acquisisciNomeFile</name></member>
+    <member refid="_input_output_8h_1a3f00148d8abb17c657d2e31e691ed109" kind="function"><name>acquisisciStringa</name></member>
+    <member refid="_input_output_8h_1a6e78db0bf1ff7ea85e626d3a91428799" kind="function"><name>visualizzaMenu</name></member>
+    <member refid="_input_output_8h_1a83a394df172562905f1aaa353d521c3c" kind="function"><name>gestoreScelta</name></member>
+    <member refid="_input_output_8h_1a366895b082490fb1505481432fa1cb05" kind="function"><name>visualizzaChiusura</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_pila_8c" kind="file"><name>Pila.c</name>
+    <member refid="_pila_8c_1a1a4a58a2d8307f5ae1d19530276b3aa8" kind="function"><name>push</name></member>
+    <member refid="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" kind="function"><name>stampaPila</name></member>
+    <member refid="_pila_8c_1a6950fe96e75654670b24ae382d0b74ec" kind="function"><name>invertiPila</name></member>
+    <member refid="_pila_8c_1aa98f13b874d7e30dce74c58f0424e2d8" kind="function"><name>svuotaPila</name></member>
+  </compound>
+  <compound refid="_pila_8h" kind="file"><name>Pila.h</name>
+    <member refid="_pila_8h_1a6b296460996e4bf880d4dab13fab46a6" kind="typedef"><name>Pila</name></member>
+    <member refid="_pila_8h_1af9a5f4e60bb9f1b66a793a4644d488bc" kind="function"><name>push</name></member>
+    <member refid="_pila_8h_1a4d63695975cceb3b2228cfaa1cee5568" kind="function"><name>stampaPila</name></member>
+    <member refid="_pila_8h_1aecdf4a65c9806d97e17d55517e03b0c8" kind="function"><name>invertiPila</name></member>
+    <member refid="_pila_8h_1a5326a5f60205eda258e893b7d16a7df9" kind="function"><name>svuotaPila</name></member>
+  </compound>
+</doxygenindex>

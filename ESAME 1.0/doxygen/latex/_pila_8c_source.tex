@@ -1,0 +1,136 @@
+\doxysection{Pila.\+c}
+\hypertarget{_pila_8c_source}{}\label{_pila_8c_source}\mbox{\hyperlink{_pila_8c}{Vai alla documentazione di questo file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_header_8h}{Header.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pila_8h}{Pila.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_output_8h}{InputOutput.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_gestione___file_8h}{Gestione\_File.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00006}00006\ \textcolor{comment}{//\ Funzione\ per\ aggiungere\ un\ nuovo\ elemento\ alla\ pila}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00007}\mbox{\hyperlink{_pila_8c_a1a4a58a2d8307f5ae1d19530276b3aa8}{00007}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_pila_8c_a1a4a58a2d8307f5ae1d19530276b3aa8}{push}}(\mbox{\hyperlink{struct_pila}{Pila}}**\ pilaPassata,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ dato)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00008}00008\ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}*\ P\ =\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_pila}{Pila}}));}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00009}00009\ \ \ \ \ \textcolor{keywordflow}{if}\ (P\ ==\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00010}00010\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}|ERRORE|\ -\/\ L'elemento\ non\ e'\ stato\ inserito!\(\backslash\)nNon\ c'e'\ memoria.\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00012}00012\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00014}00014\ \ \ \ \ strncpy(P-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}},\ dato,\ SIZE\_PILA\ -\/\ 1);}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00015}00015\ \ \ \ \ P-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}}[SIZE\_PILA\ -\/\ 1]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};\ \textcolor{comment}{//aggiunge\ lo\ \(\backslash\)0\ a\ fine\ carattere}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00016}00016\ \ \ \ \ P-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}}\ =\ *pilaPassata;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00017}00017\ \ \ \ \ *pilaPassata\ =\ P;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00021}00021\ \textcolor{comment}{//\ Funzione\ per\ rimuovere\ l'elemento\ in\ cima\ alla\ pila}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00022}\mbox{\hyperlink{_pila_8c_a3424d9e15d4a194447aac2ebb7dac8ab}{00022}}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_pila_8c_a3424d9e15d4a194447aac2ebb7dac8ab}{pop}}(\mbox{\hyperlink{struct_pila}{Pila}}**\ pila)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{if}\ (*pila\ ==\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00024}00024\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Errore:\ la\ pila\ e'\ vuota.\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00026}00026\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}\ *nodoRimosso\ =\ *pila;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{char}\ *dato\ =\ strdup(nodoRimosso-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}});\ \ \textcolor{comment}{//\ Copia\ il\ dato\ in\ una\ nuova\ area\ di\ memoria}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00030}00030\ \ \ \ \ *pila\ =\ nodoRimosso-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{return}\ dato;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00035}00035\ \textcolor{comment}{//\ Funzione\ per\ verificare\ se\ la\ pila\ e'\ vuota}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00036}\mbox{\hyperlink{_pila_8c_a1f45e1ee6f37cd256f8b100a5ab9e26e}{00036}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_pila_8c_a1f45e1ee6f37cd256f8b100a5ab9e26e}{isEmpty}}(\mbox{\hyperlink{struct_pila}{Pila}}*\ pilaPassata)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00037}00037\ \ \ \ \ \textcolor{keywordflow}{if}\ (pilaPassata\ ==\ NULL)\{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00039}00039\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00041}00041\ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00043}00043\ \textcolor{comment}{//\ Funzione\ per\ ottenere\ l'elemento\ in\ cima\ alla\ pila\ senza\ rimuoverlo}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00044}\mbox{\hyperlink{_pila_8c_aa4fa645187ec272a4a073e065e3624c1}{00044}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_pila_8c_aa4fa645187ec272a4a073e065e3624c1}{top}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_pila}{Pila}}*\ pilaPassata)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{if}\ (pilaPassata\ ==\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00046}00046\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}|ERRORE|\ -\/\ La\ pila\ e'\ vuota!\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00048}00048\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00049}00049\ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00051}00051\ \textcolor{comment}{//\ Funzione\ per\ stampare\ una\ pila}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00052}\mbox{\hyperlink{_pila_8c_ab9a9228746dd5426b6b9ffa2b346ebb1}{00052}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_pila_8c_ab9a9228746dd5426b6b9ffa2b346ebb1}{stampaPila}}(\mbox{\hyperlink{struct_pila}{Pila}}*\ pilaCorrente)\{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{if}\ (pilaCorrente\ ==\ NULL)\{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00054}00054\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}La\ Pila\ e'\ vuota.\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00055}00055\ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00056}00056\ \ \ \ \ \ \ \ \ puts(\textcolor{stringliteral}{"{}\ "{}});}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (pilaCorrente\ !=\ NULL)\{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}\%s\ -\/-\/>\ "{}},pilaCorrente-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}});}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ pilaCorrente\ =\ pilaCorrente-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00060}00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00061}00061\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}NULL\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00062}00062\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00063}00063\ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00065}00065\ \textcolor{comment}{//\ Funzione\ per\ invertire\ una\ pila}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00066}\mbox{\hyperlink{_pila_8c_a6950fe96e75654670b24ae382d0b74ec}{00066}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_pila_8c_a6950fe96e75654670b24ae382d0b74ec}{invertiPila}}(\mbox{\hyperlink{struct_pila}{Pila}}**\ pilaPassata)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00067}00067\ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}*\ pilaInvertita\ =\ NULL;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00068}00068\ \ \ \ \ \textcolor{keywordflow}{while}\ (*pilaPassata\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00069}00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}*\ nodoCorrente\ =\ *pilaPassata;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00070}00070\ \ \ \ \ \ \ \ \ *pilaPassata\ =\ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00072}00072\ \ \ \ \ \ \ \ \ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}}\ =\ pilaInvertita;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00073}00073\ \ \ \ \ \ \ \ \ pilaInvertita\ =\ nodoCorrente;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00074}00074\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00075}00075\ \ \ \ \ *pilaPassata\ =\ pilaInvertita;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00076}00076\ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00079}00079\ \textcolor{comment}{//\ Funzione\ per\ dealloacare\ una\ pila}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00080}\mbox{\hyperlink{_pila_8c_a8d3503ea0e3ec93d1e9c27bceff63cbb}{00080}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_pila_8c_a8d3503ea0e3ec93d1e9c27bceff63cbb}{distruggiPila}}(\mbox{\hyperlink{struct_pila}{Pila}}**\ pilaPassata)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{while}\ (*pilaPassata\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00082}00082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}*\ temp\ =\ *pilaPassata;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00083}00083\ \ \ \ \ \ \ \ \ *pilaPassata\ =\ (*pilaPassata)-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00084}00084\ \ \ \ \ \ \ \ \ free(temp);}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00086}00086\ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00088}\mbox{\hyperlink{_pila_8c_ae8d51e64648ac4cd3378ba69beb7c070}{00088}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_pila_8c_ae8d51e64648ac4cd3378ba69beb7c070}{inizializzaPila}}(\mbox{\hyperlink{struct_pila}{Pila}}**\ pilaPassata)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00089}00089\ \ \ \ \ *pilaPassata\ =\ NULL;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00090}00090\ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00092}\mbox{\hyperlink{_pila_8c_aabb031042b94b33bca8c0656d2af2469}{00092}}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{_pila_8c_aabb031042b94b33bca8c0656d2af2469}{formattaCaratteri}}(\mbox{\hyperlink{struct_pila}{Pila}}*\ pila)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00093}00093\ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}*\ nodoCorrente\ =\ pila;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00094}00094\ \ \ \ \ \textcolor{keywordtype}{int}\ lunghezzaTotale\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00096}00096\ \ \ \ \ \textcolor{comment}{//\ Calcola\ la\ lunghezza\ totale\ dei\ caratteri\ nella\ pila}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00097}00097\ \ \ \ \ \textcolor{keywordflow}{while}\ (nodoCorrente\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00098}00098\ \ \ \ \ \ \ \ \ lunghezzaTotale\ +=\ strlen(nodoCorrente-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}});}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00099}00099\ \ \ \ \ \ \ \ \ nodoCorrente\ =\ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00100}00100\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00102}00102\ \ \ \ \ \textcolor{keywordtype}{char}*\ caratteri\ =\ malloc(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char})\ *\ (lunghezzaTotale\ +\ 1));}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00103}00103\ \ \ \ \ \textcolor{keywordtype}{int}\ index\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00105}00105\ \ \ \ \ nodoCorrente\ =\ pila;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00107}00107\ \ \ \ \ \textcolor{comment}{//\ Copia\ i\ caratteri\ nella\ variabile\ caratteri}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00108}00108\ \ \ \ \ \textcolor{keywordflow}{while}\ (nodoCorrente\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00109}00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}}[i]\ !=\ \textcolor{charliteral}{'\(\backslash\)0'};\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (nodoCorrente-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}}[i]\ ==\ \textcolor{charliteral}{'\(\backslash\)n'}||\ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}}[i]==\textcolor{charliteral}{'\(\backslash\)0'})\{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ caratteri[index]\ =\ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}}[i];}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ index++;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ caratteri[index]\ =\ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}}[i];}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ index++;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ caratteri[index]\ =\ \textcolor{charliteral}{'-\/'};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ index++;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00119}00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00120}00120\ \ \ \ \ \ \ \ \ nodoCorrente\ =\ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00121}00121\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00123}00123\ \ \ \ \ \textcolor{comment}{//\ Rimuovi\ l'ultimo\ trattino}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00124}00124\ \ \ \ \ \textcolor{keywordflow}{if}\ (index\ >\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00125}00125\ \ \ \ \ \ \ \ \ caratteri[index\ -\/\ 1]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00126}00126\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00128}00128\ \ \ \ \ \textcolor{keywordflow}{return}\ caratteri;}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00129}00129\ \}}
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_pila_8c_source_l00131}00131\ }
+
+\end{DoxyCode}

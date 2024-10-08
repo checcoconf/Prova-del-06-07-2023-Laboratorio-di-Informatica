@@ -1,0 +1,165 @@
+\doxysection{Riferimenti per il file Funzioni.\+c}
+\label{_funzioni_8c}\index{Funzioni.c@{Funzioni.c}}
+
+
+Questo file include le funzioni di dominio.  
+
+
+{\ttfamily \#include \"{}header.\+h\"{}}\newline
+{\ttfamily \#include \"{}Funzioni.\+h\"{}}\newline
+{\ttfamily \#include \"{}Input\+Output.\+h.\"{}}\newline
+{\ttfamily \#include \"{}Pila.\+h\"{}}\newline
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pila} $\ast$ \textbf{ sostituisci} (\textbf{ Pila} $\ast$$\ast$pila, const char $\ast$elemento\+Da\+Sostituire, const char $\ast$nuovo\+Elemento)
+\item 
+int \textbf{ conta\+Alfanumerico} (const char $\ast$str)
+\item 
+int \textbf{ conta\+Numeri} (const char $\ast$str)
+\item 
+int \textbf{ conta\+Vocali} (const char $\ast$str)
+\item 
+void \textbf{ swap} (\textbf{ Pila} $\ast$a, \textbf{ Pila} $\ast$b)
+\item 
+\textbf{ Pila} $\ast$ \textbf{ clona\+Pila} (const \textbf{ Pila} $\ast$pila\+Originale)
+\item 
+\textbf{ Pila} $\ast$ \textbf{ bubble\+Sort\+Ricorsivo} (\textbf{ Pila} $\ast$$\ast$pila)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Questo file include le funzioni di dominio. 
+
+\begin{DoxyVersion}{Versione}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+06/07/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autori}
+Calabrese Lorenzo 
+
+Cappelluti Claudia Antonia 
+
+Conforti Francesco 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\label{_funzioni_8c_a2e1889b0fa0a7ab25a627c7c1135b43a} 
+\index{Funzioni.c@{Funzioni.c}!bubbleSortRicorsivo@{bubbleSortRicorsivo}}
+\index{bubbleSortRicorsivo@{bubbleSortRicorsivo}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{bubbleSortRicorsivo()}
+{\footnotesize\ttfamily \textbf{ Pila} $\ast$ bubble\+Sort\+Ricorsivo (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{pila }\end{DoxyParamCaption})}
+
+bubble\+Sort\+Ricorsivo 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila} & e\textquotesingle{} un puntatore alla struttura \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la pila non deve essere nulla e nemmemeno l\textquotesingle{}elemento successivo 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce una nuova pila ordinata secondo una specifica relazione d\textquotesingle{}ordine 
+\end{DoxyReturn}
+\label{_funzioni_8c_a90609c92cfde3ffc9b213de5b781228c} 
+\index{Funzioni.c@{Funzioni.c}!clonaPila@{clonaPila}}
+\index{clonaPila@{clonaPila}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{clonaPila()}
+{\footnotesize\ttfamily \textbf{ Pila} $\ast$ clona\+Pila (\begin{DoxyParamCaption}\item[{const \textbf{ Pila} $\ast$}]{pila\+Originale }\end{DoxyParamCaption})}
+
+clona\+Pila 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Originale} & e\textquotesingle{} un puntatore alla struttura \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+restituisce una pila clonata a quella passata per riferimento 
+\end{DoxyReturn}
+\label{_funzioni_8c_a655f67b2984bff476d1f97750a5764d8} 
+\index{Funzioni.c@{Funzioni.c}!contaAlfanumerico@{contaAlfanumerico}}
+\index{contaAlfanumerico@{contaAlfanumerico}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{contaAlfanumerico()}
+{\footnotesize\ttfamily int conta\+Alfanumerico (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+conta\+Alfanumerico 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$str} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la stringa non deve essere nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce il numero di caratteri alfanumerici 
+\end{DoxyReturn}
+\label{_funzioni_8c_ae386eaa89c4fb31c0159d9e2dc54c97a} 
+\index{Funzioni.c@{Funzioni.c}!contaNumeri@{contaNumeri}}
+\index{contaNumeri@{contaNumeri}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{contaNumeri()}
+{\footnotesize\ttfamily int conta\+Numeri (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+conta\+Numeri 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$str} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la stringa non deve essere nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce il numero dei numeri presenti nella stringa 
+\end{DoxyReturn}
+\label{_funzioni_8c_a9d9b4cec3afa3def0a78b2fdfde0418a} 
+\index{Funzioni.c@{Funzioni.c}!contaVocali@{contaVocali}}
+\index{contaVocali@{contaVocali}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{contaVocali()}
+{\footnotesize\ttfamily int conta\+Vocali (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+conta\+Vocali 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$str} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la stringa non deve essere nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce il numero di vocali presenti nella stringa 
+\end{DoxyReturn}
+\label{_funzioni_8c_a58bad8ca508eebb0e11542f293215213} 
+\index{Funzioni.c@{Funzioni.c}!sostituisci@{sostituisci}}
+\index{sostituisci@{sostituisci}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{sostituisci()}
+{\footnotesize\ttfamily \textbf{ Pila} $\ast$ sostituisci (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{pila,  }\item[{const char $\ast$}]{elemento\+Da\+Sostituire,  }\item[{const char $\ast$}]{nuovo\+Elemento }\end{DoxyParamCaption})}
+
+sostituisci 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila} & e\textquotesingle{}un puntatore alla struct \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$elemento\+Da\+Sostituire} & e\textquotesingle{}un puntatore a carattere \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$nuovo\+Elemento} & e\textquotesingle{} un puntatore a carattere \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+la pila e\textquotesingle{} nulla 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Restituisce}
+restituisce una nuova pila con le dovute sostituzioni 
+\end{DoxyReturn}
+\label{_funzioni_8c_a4df0a9304b9de6f66dc16e022fd6bdf3} 
+\index{Funzioni.c@{Funzioni.c}!swap@{swap}}
+\index{swap@{swap}!Funzioni.c@{Funzioni.c}}
+\doxysubsubsection{swap()}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$}]{a,  }\item[{\textbf{ Pila} $\ast$}]{b }\end{DoxyParamCaption})}
+
+swap 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$a} & e\textquotesingle{} un puntatore alla struttura \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$b} & e\textquotesingle{} un puntatore alla struttura \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}

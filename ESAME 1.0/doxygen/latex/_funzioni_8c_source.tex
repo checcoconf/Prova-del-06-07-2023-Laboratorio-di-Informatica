@@ -1,0 +1,43 @@
+\doxysection{Funzioni.\+c}
+\hypertarget{_funzioni_8c_source}{}\label{_funzioni_8c_source}\mbox{\hyperlink{_funzioni_8c}{Vai alla documentazione di questo file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_header_8h}{header.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_funzioni_8h}{Funzioni.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_gestione___file_8h}{Gestione\_file.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pila_8h}{Pila.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_difensiva_8h}{Difensiva.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_input_output_8h}{InputOutput.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00009}\mbox{\hyperlink{_funzioni_8c_a11f18703432cc24049602b67dc82ef51}{00009}}\ \mbox{\hyperlink{struct_pila}{Pila}}*\ \mbox{\hyperlink{_funzioni_8c_a11f18703432cc24049602b67dc82ef51}{sostituisci}}(\mbox{\hyperlink{struct_pila}{Pila}}*\ pila,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ elementoDaSostituire,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nuovoElemento)\ \{}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00010}00010\ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}*\ pilaModificata\ =\ NULL;}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}*\ nodoCorrente\ =\ pila;}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00013}00013\ \ \ \ \ \textcolor{keywordflow}{while}\ (nodoCorrente\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00014}00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}*\ nuovoNodo\ =\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{struct_pila}{Pila}}));}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00015}00015\ \ \ \ \ \ \ \ \ strcpy(nuovoNodo-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}},\ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}});}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00016}00016\ \ \ \ \ \ \ \ \ nuovoNodo-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}}\ =\ NULL;}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00018}00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(nodoCorrente-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}},\ elementoDaSostituire)\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ strncpy(nuovoNodo-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}},\ nuovoElemento,\ SIZE\_PILA\ -\/\ 1);}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ nuovoNodo-\/>\mbox{\hyperlink{struct_pila_aa51f190825baa5e4b80aa3a80d06b2ce}{dato}}[SIZE\_PILA\ -\/\ 1]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00021}00021\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pilaModificata\ ==\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ pilaModificata\ =\ nuovoNodo;}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00025}00025\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_pila}{Pila}}*\ ultimoNodo\ =\ pilaModificata;}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (ultimoNodo-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}}\ !=\ NULL)\ \{}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ultimoNodo\ =\ ultimoNodo-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}};}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ ultimoNodo-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}}\ =\ nuovoNodo;}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00031}00031\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00032}00032\ \ \ \ \ \ \ \ \ nodoCorrente\ =\ nodoCorrente-\/>\mbox{\hyperlink{struct_pila_a1885e0e21f2563f74f2a71c5072bff21}{nextPtr}};}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00033}00033\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00034}00034\ \ \ \ \ \textcolor{keywordflow}{return}\ pilaModificata;}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_funzioni_8c_source_l00038}00038\ }
+
+\end{DoxyCode}

@@ -1,0 +1,2876 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment Calabrese_Cappelluti_Conforti  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0 \par
+}}Calabrese_Cappelluti_Conforti}
+{\comment Generato da doxygen 1.9.7.}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Calabrese_Cappelluti_Conforti}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Versione 1.0\par\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Sommario\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Indice delle strutture dati\par \pard\plain 
+{\tc \v Indice delle strutture dati}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Strutture dati\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Queste sono le strutture dati con una loro breve descrizione:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Pila} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Indice dei file\par \pard\plain 
+{\tc \v Indice dei file}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Elenco dei file\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Questo \'E8 un elenco di tutti i file con una loro breve descrizione:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Difensiva.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le implementazioni riguardanti la programmazione difensiva })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Difensiva.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include delle funzioni utili per la programmazione difensiva })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Funzioni.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include le funzioni di dominio })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Funzioni.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include i prototipi delle funzioni di dominio })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Gestione_File.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le funzioni per la gestione del file })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Gestione_File.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutti i prototipi per la gestione del file })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Header.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file esegue le seguenti operazioni:\par
+ Include tutte le librerie di "c" necessarie\par
+ Definisce la struttura dinamica di tipo pila })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b InputOutput.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le funzioni di Input e Output verso l'utente })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b InputOutput.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte i prototipi di Input e Output verso l'utente })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b main.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Pila.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le funzioni di gestione della pila })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Pila.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutti i prototipi di gestione della pila })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documentazione delle classi{\tc \v Documentazione delle classi}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per la struct Pila\par \pard\plain 
+{\tc\tcl2 \v Pila}
+{\xe \v Pila}
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+\par
+{
+{\f2 #include <Pila.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Campi\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b dato} [SIZE_PILA]\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b Pila} * {\b nextPtr}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+typedef struct {\b Pila} definisce una struttura di tipo Stack \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione dei campi\par
+\pard\plain 
+{\xe \v dato\:Pila}
+{\xe \v Pila\:dato}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char dato[SIZE_PILA]}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v nextPtr\:Pila}
+{\xe \v Pila\:nextPtr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\b Pila}* nextPtr}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentazione per questa struct \'E8 stata generata a partire dal seguente file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Pila.h}}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documentazione dei file{\tc \v Documentazione dei file}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file Difensiva.c\par \pard\plain 
+{\tc\tcl2 \v Difensiva.c}
+{\xe \v Difensiva.c}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le implementazioni riguardanti la programmazione difensiva. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Difensiva.h"}\par
+{\f2 #include "Gestione_File.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b valida_nome_file} (const char *nomeFile)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b valida_estensione_file} (const char *nome_file)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b validatore_file} (const char *nomeFile)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b rimuoviNewline} (char *stringa)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b controlloStringa} (char *stringa)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b pulisciFile} (const char *nomeFile)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le implementazioni riguardanti la programmazione difensiva. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese Lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v controlloStringa\:Difensiva.c}
+{\xe \v Difensiva.c\:controlloStringa}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char * controlloStringa (char *  {\i stringa})}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+controlloStringa {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i stringa} \cell }{e' un puntatore a carattere,essa rappresenta una stringa non formattata dal '-' \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+stringa non e' nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+viene restituita una stringa puntatore a carattere quando la stringa viene inserita correttamente \par
+}}}}
+{\xe \v pulisciFile\:Difensiva.c}
+{\xe \v Difensiva.c\:pulisciFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void pulisciFile (const char *  {\i nomeFile})}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+pulisciFile {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e' un puntatore a carattere ,esso rappresenta il nome del file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+il nome del file non e' nullo \par
+}}}}
+{\xe \v rimuoviNewline\:Difensiva.c}
+{\xe \v Difensiva.c\:rimuoviNewline}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void rimuoviNewline (char *  {\i stringa})}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+rimuoviNewline {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i stringa} \cell }{e' un puntatore a carattere ,essa rappresenta una stringa non formattata dal '-' \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+stringa non e' nulla \par
+}}}}
+{\xe \v valida_estensione_file\:Difensiva.c}
+{\xe \v Difensiva.c\:valida_estensione_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool valida_estensione_file (const char *  {\i nome_file})}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+valida_estensione_file {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nome_file} \cell }{e'un puntatore a carattere,esso rappresenta il nome del file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+nome_file e'una stringa non nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1 se il file ha estensione .txt \par
+0 se il file non presenta l'estensione \par
+}}}}
+{\xe \v valida_nome_file\:Difensiva.c}
+{\xe \v Difensiva.c\:valida_nome_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool valida_nome_file (const char *  {\i nomeFile})}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+valida_nome_file {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e'un puntatore a carattere,esso rappresenta il nome del file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true se il nome del file rispetta la dimensione e non presenta caratteri non ammessi \par
+false se il nome del file non rispetta la dimensione e/o i caratteri non ammessi \par
+}}}}
+{\xe \v validatore_file\:Difensiva.c}
+{\xe \v Difensiva.c\:validatore_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool validatore_file (const char *  {\i nomeFile})}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+validatore_file {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e'un puntatore a carattere,esso rappresenta il nome del file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+nome_file e' una stringa non nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true se il nome del file presenta un nome corretto,se l'estensione e il percorso file sono corretti \par
+false se il nome del file non presenta un nome corretto, se l' estensione e il percorso file non sono corretti \par
+}}}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Verifica nomeFile e che l'estensione del file sia .txt\par
+Valida Estensione File\par
+Se il percorso del file fornito e' corretto, allora verifico la sua esistenza effettiva\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file Difensiva.h\par \pard\plain 
+{\tc\tcl2 \v Difensiva.h}
+{\xe \v Difensiva.h}
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include delle funzioni utili per la programmazione difensiva. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "header.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b valida_nome_file} (const char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b valida_estensione_file} (const char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b validatore_file} (const char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b rimuoviNewline} (char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b controlloStringa} (char *stringa)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b pulisciFile} (const char *)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include delle funzioni utili per la programmazione difensiva. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese Lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v controlloStringa\:Difensiva.h}
+{\xe \v Difensiva.h\:controlloStringa}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char * controlloStringa (char *  {\i stringa})}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+controlloStringa prende in input la stringa ed esegue un controllo sulla correttezza\par
+controlloStringa {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i stringa} \cell }{e' un puntatore a carattere,essa rappresenta una stringa non formattata dal '-' \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+stringa non e' nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+viene restituita una stringa puntatore a carattere quando la stringa viene inserita correttamente \par
+}}}}
+{\xe \v pulisciFile\:Difensiva.h}
+{\xe \v Difensiva.h\:pulisciFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void pulisciFile (const char *  {\i nomeFile})}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+pulisciFile \'E8 una procedura che rimuove le righe del file\par
+pulisciFile {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e' un puntatore a carattere ,esso rappresenta il nome del file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+il nome del file non e' nullo \par
+}}}}
+{\xe \v rimuoviNewline\:Difensiva.h}
+{\xe \v Difensiva.h\:rimuoviNewline}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void rimuoviNewline (char *  {\i stringa})}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+rimuoviNewline prende in input la stringa sostituisce "\\\\n" con "\\\\n"\par
+rimuoviNewline {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i stringa} \cell }{e' un puntatore a carattere ,essa rappresenta una stringa non formattata dal '-' \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+stringa non e' nulla \par
+}}}}
+{\xe \v valida_estensione_file\:Difensiva.h}
+{\xe \v Difensiva.h\:valida_estensione_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool valida_estensione_file (const char *  {\i nome_file})}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+valida_estensione_file prende in input il nome del file inserito dall' utente\par
+ e verifica che l'estensione del file sia .txt\par
+valida_estensione_file {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nome_file} \cell }{e'un puntatore a carattere,esso rappresenta il nome del file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+nome_file e'una stringa non nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1 se il file ha estensione .txt \par
+0 se il file non presenta l'estensione \par
+}}}}
+{\xe \v valida_nome_file\:Difensiva.h}
+{\xe \v Difensiva.h\:valida_nome_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool valida_nome_file (const char *  {\i nomeFile})}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+valida_nome_file prende in input il nome del file inserito dall'utente\par
+valida_nome_file {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e'un puntatore a carattere,esso rappresenta il nome del file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true se il nome del file rispetta la dimensione e non presenta caratteri non ammessi \par
+false se il nome del file non rispetta la dimensione e/o i caratteri non ammessi \par
+}}}}
+{\xe \v validatore_file\:Difensiva.h}
+{\xe \v Difensiva.h\:validatore_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool validatore_file (const char *  {\i nomeFile})}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+validatore_file prende in input il nome del file inserito dall'utente\par
+ e verificano la validazione del file\par
+validatore_file {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e'un puntatore a carattere,esso rappresenta il nome del file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+nome_file e' una stringa non nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+true se il nome del file presenta un nome corretto,se l'estensione e il percorso file sono corretti \par
+false se il nome del file non presenta un nome corretto, se l' estensione e il percorso file non sono corretti \par
+}}}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Verifica nomeFile e che l'estensione del file sia .txt\par
+Valida Estensione File\par
+Se il percorso del file fornito e' corretto, allora verifico la sua esistenza effettiva\par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Difensiva.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Vai alla documentazione di questo file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef DIFENSIVA_H_INCLUDED}\par
+2 {\cf21 #define DIFENSIVA_H_INCLUDED}\par
+3 \par
+16 {\cf21 #include "header.h"}\par
+17 \par
+22 {\cf18 bool} valida_nome_file({\cf17 const} {\cf18 char} *);\par
+23 \par
+27 {\cf18 bool} valida_estensione_file({\cf17 const} {\cf18 char} *);\par
+28 \par
+32 {\cf18 bool} validatore_file({\cf17 const} {\cf18 char} *);\par
+33 \par
+37 {\cf18 void} rimuoviNewline({\cf18 char}* );\par
+38 \par
+43 {\cf18 char}* controlloStringa({\cf18 char}* stringa);\par
+44 \par
+49 {\cf18 void} pulisciFile ({\cf17 const} {\cf18 char}* );\par
+50 \par
+51 {\cf21 #endif  DIFENSIVA_H_INCLUDED}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file Funzioni.c\par \pard\plain 
+{\tc\tcl2 \v Funzioni.c}
+{\xe \v Funzioni.c}
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include le funzioni di dominio. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "header.h"}\par
+{\f2 #include "Funzioni.h"}\par
+{\f2 #include "InputOutput.h."}\par
+{\f2 #include "Pila.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Pila} * {\b sostituisci} ({\b Pila} **pila, const char *elementoDaSostituire, const char *nuovoElemento)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b contaAlfanumerico} (const char *str)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b contaNumeri} (const char *str)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b contaVocali} (const char *str)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b swap} ({\b Pila} *a, {\b Pila} *b)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Pila} * {\b clonaPila} (const {\b Pila} *pilaOriginale)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Pila} * {\b bubbleSortRicorsivo} ({\b Pila} **pila)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include le funzioni di dominio. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese Lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v bubbleSortRicorsivo\:Funzioni.c}
+{\xe \v Funzioni.c\:bubbleSortRicorsivo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Pila} * bubbleSortRicorsivo ({\b Pila} **  {\i pila})}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+bubbleSortRicorsivo {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pila} \cell }{e' un puntatore alla struttura {\b Pila} \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la pila non deve essere nulla e nemmemeno l'elemento successivo \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce una nuova pila ordinata secondo una specifica relazione d'ordine \par
+}}}}
+{\xe \v clonaPila\:Funzioni.c}
+{\xe \v Funzioni.c\:clonaPila}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Pila} * clonaPila (const {\b Pila} *  {\i pilaOriginale})}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+clonaPila {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaOriginale} \cell }{e' un puntatore alla struttura {\b Pila} \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce una pila clonata a quella passata per riferimento \par
+}}}}
+{\xe \v contaAlfanumerico\:Funzioni.c}
+{\xe \v Funzioni.c\:contaAlfanumerico}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int contaAlfanumerico (const char *  {\i str})}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+contaAlfanumerico {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *str} \cell }{e' un puntatore a carattere \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la stringa non deve essere nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce il numero di caratteri alfanumerici \par
+}}}}
+{\xe \v contaNumeri\:Funzioni.c}
+{\xe \v Funzioni.c\:contaNumeri}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int contaNumeri (const char *  {\i str})}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+contaNumeri {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *str} \cell }{e' un puntatore a carattere \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la stringa non deve essere nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce il numero dei numeri presenti nella stringa \par
+}}}}
+{\xe \v contaVocali\:Funzioni.c}
+{\xe \v Funzioni.c\:contaVocali}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int contaVocali (const char *  {\i str})}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+contaVocali {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *str} \cell }{e' un puntatore a carattere \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la stringa non deve essere nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce il numero di vocali presenti nella stringa \par
+}}}}
+{\xe \v sostituisci\:Funzioni.c}
+{\xe \v Funzioni.c\:sostituisci}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Pila} * sostituisci ({\b Pila} **  {\i pila}, const char *  {\i elementoDaSostituire}, const char *  {\i nuovoElemento})}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+sostituisci {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pila} \cell }{e'un puntatore alla struct {\b Pila} \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *elementoDaSostituire} \cell }{e'un puntatore a carattere \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nuovoElemento} \cell }{e' un puntatore a carattere \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la pila e' nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce una nuova pila con le dovute sostituzioni \par
+}}}}
+{\xe \v swap\:Funzioni.c}
+{\xe \v Funzioni.c\:swap}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void swap ({\b Pila} *  {\i a}, {\b Pila} *  {\i b})}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+swap {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *a} \cell }{e' un puntatore alla struttura {\b Pila} \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *b} \cell }{e' un puntatore alla struttura {\b Pila} \cell }
+{\row }
+}
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file Funzioni.h\par \pard\plain 
+{\tc\tcl2 \v Funzioni.h}
+{\xe \v Funzioni.h}
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include i prototipi delle funzioni di dominio. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "header.h"}\par
+{\f2 #include "Pila.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Pila} * {\b sostituisci} ({\b Pila} **, const char *, const char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Pila} * {\b bubbleSortRicorsivo} ({\b Pila} **)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b swap} ({\b Pila} *, {\b Pila} *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b contaVocali} (const char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b contaNumeri} (const char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b contaAlfanumerico} (const char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Pila} * {\b clonaPila} (const {\b Pila} *)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include i prototipi delle funzioni di dominio. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese Lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v bubbleSortRicorsivo\:Funzioni.h}
+{\xe \v Funzioni.h\:bubbleSortRicorsivo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Pila} * bubbleSortRicorsivo ({\b Pila} **  {\i pila})}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+bubbleSortRicorsivo restituisce la pila ordinata\par
+bubbleSortRicorsivo {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pila} \cell }{e' un puntatore alla struttura {\b Pila} \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la pila non deve essere nulla e nemmemeno l'elemento successivo \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce una nuova pila ordinata secondo una specifica relazione d'ordine \par
+}}}}
+{\xe \v clonaPila\:Funzioni.h}
+{\xe \v Funzioni.h\:clonaPila}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Pila} * clonaPila (const {\b Pila} *  {\i pilaOriginale})}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+clonaPila crea una copia di una pila passata per riferimento\par
+clonaPila {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaOriginale} \cell }{e' un puntatore alla struttura {\b Pila} \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce una pila clonata a quella passata per riferimento \par
+}}}}
+{\xe \v contaAlfanumerico\:Funzioni.h}
+{\xe \v Funzioni.h\:contaAlfanumerico}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int contaAlfanumerico (const char *  {\i str})}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+contaAlfanumerico conta gli elementi della stringa ricevuta come parametro che sono delle lettere :\par
+contaAlfanumerico {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *str} \cell }{e' un puntatore a carattere \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la stringa non deve essere nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce il numero di caratteri alfanumerici \par
+}}}}
+{\xe \v contaNumeri\:Funzioni.h}
+{\xe \v Funzioni.h\:contaNumeri}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int contaNumeri (const char *  {\i str})}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+contaNumeri conta i numeri della stringa ricevuta come parametro\par
+contaNumeri {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *str} \cell }{e' un puntatore a carattere \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la stringa non deve essere nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce il numero dei numeri presenti nella stringa \par
+}}}}
+{\xe \v contaVocali\:Funzioni.h}
+{\xe \v Funzioni.h\:contaVocali}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int contaVocali (const char *  {\i str})}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+contaVocali conta le vocali della stringa ricevuta come parametro\par
+contaVocali {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *str} \cell }{e' un puntatore a carattere \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la stringa non deve essere nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce il numero di vocali presenti nella stringa \par
+}}}}
+{\xe \v sostituisci\:Funzioni.h}
+{\xe \v Funzioni.h\:sostituisci}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Pila} * sostituisci ({\b Pila} **  {\i pila}, const char *  {\i elementoDaSostituire}, const char *  {\i nuovoElemento})}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+sostituisci restituisce la pila con gli elementi sostituiti\par
+sostituisci {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pila} \cell }{e'un puntatore alla struct {\b Pila} \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *elementoDaSostituire} \cell }{e'un puntatore a carattere \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nuovoElemento} \cell }{e' un puntatore a carattere \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+la pila e' nulla \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce una nuova pila con le dovute sostituzioni \par
+}}}}
+{\xe \v swap\:Funzioni.h}
+{\xe \v Funzioni.h\:swap}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void swap ({\b Pila} *  {\i a}, {\b Pila} *  {\i b})}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+swap esegue lo scambio tra i top delle due pile ricevute come parametro\par
+swap {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *a} \cell }{e' un puntatore alla struttura {\b Pila} \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *b} \cell }{e' un puntatore alla struttura {\b Pila} \cell }
+{\row }
+}
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Funzioni.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Vai alla documentazione di questo file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef FUNZIONI_H_INCLUDED}\par
+2 {\cf21 #define FUNZIONI_H_INCLUDED}\par
+3 \par
+16 {\cf21 #include "header.h"}\par
+17 {\cf21 #include "Pila.h"}\par
+18 \par
+22 Pila *sostituisci(Pila**, {\cf17 const} {\cf18 char}*, {\cf17 const} {\cf18 char}*);\par
+23 \par
+27 Pila* bubbleSortRicorsivo(Pila **);\par
+28 \par
+32 {\cf18 void} swap(Pila* , Pila* );\par
+33 \par
+37 {\cf18 int} contaVocali({\cf17 const} {\cf18 char}*);\par
+38 \par
+39 \par
+43 {\cf18 int} contaNumeri ({\cf17 const} {\cf18 char}* );\par
+44 \par
+48 {\cf18 int} contaAlfanumerico ({\cf17 const} {\cf18 char}*);\par
+49 \par
+53 Pila* clonaPila({\cf17 const} Pila*);\par
+54 \par
+55 {\cf21 #endif  FUNZIONI_H_INCLUDED}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file Gestione_File.c\par \pard\plain 
+{\tc\tcl2 \v Gestione_File.c}
+{\xe \v Gestione_File.c}
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le funzioni per la gestione del file. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Header.h"}\par
+{\f2 #include "Pila.h"}\par
+{\f2 #include "Gestione_File.h"}\par
+{\f2 #include "Difensiva.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b apriFile} (const char *nome_file, const char *modo, FILE **file)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b chiudiFile} (FILE *file)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b leggiFile} (const char *nomeFile, {\b Pila} **pilaPassata)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b scriviFile} (const char *nomeFile, const char *msg, const char *modo)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b scriviFileFormattato} (const char *nomeFile, {\b Pila} *pila)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b scrivi_log} (const char *messaggio)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le funzioni per la gestione del file. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese Lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v apriFile\:Gestione_File.c}
+{\xe \v Gestione_File.c\:apriFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int apriFile (const char *  {\i nome_file}, const char *  {\i modo}, FILE **  {\i file})}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+apriFile {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nome_file} \cell }{e' un puntatore a carattere \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *modo} \cell }{e' un puntatore a carattere \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *file} \cell }{e' un puntatore al file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+nome_file non e' una stringa non nulla. \par
+nodo e' una stringa non nulla. \par
+file e' un puntatore al puntatore del file e non deve essere NULL. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce 1 se il file e' stato aperto con successo \par
+restituisce 0 se il file non e' stato aperto con successo \par
+}}}}
+{\xe \v chiudiFile\:Gestione_File.c}
+{\xe \v Gestione_File.c\:chiudiFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int chiudiFile (FILE *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+chiudiFile {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *file} \cell }{e' un puntatore al file\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+ritorna 0 o 1. \par
+}}}}
+{\xe \v leggiFile\:Gestione_File.c}
+{\xe \v Gestione_File.c\:leggiFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void leggiFile (const char *  {\i nomeFile}, {\b Pila} **  {\i pilaPassata})}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+leggiFile\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e' un puntatore al nome del file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaPassata} \cell }{e' un puntatore al puntatore di una pila in cui memorizzare le stringhe lette. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+*nome_file una stringa non nulla \par
+}}}}
+{\xe \v scrivi_log\:Gestione_File.c}
+{\xe \v Gestione_File.c\:scrivi_log}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void scrivi_log (const char *  {\i messaggio})}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Scrive un messaggio di log in un file di log.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *messaggio} \cell }{e' il messaggio da scrivere nel file di log.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il file di log "Log.txt" deve essere accessibile e scrivibile. \par
+}}}}
+{\xe \v scriviFile\:Gestione_File.c}
+{\xe \v Gestione_File.c\:scriviFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void scriviFile (const char *  {\i nomeFile}, const char *  {\i msg}, const char *  {\i modo})}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Scrive un messaggio in un file specificato.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e' il nome del file in cui scrivere il messaggio. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *msg} \cell }{e' messaggio da scrivere nel file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *modo} \cell }{e' la modalit\'E0 di apertura del file ("r", "w", "a").\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il file specificato deve essere aperto correttamente e accessibile in base alla modalit\'E0 specificata. \par
+}}}}
+{\xe \v scriviFileFormattato\:Gestione_File.c}
+{\xe \v Gestione_File.c\:scriviFileFormattato}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void scriviFileFormattato (const char *  {\i nomeFile}, {\b Pila} *  {\i pila})}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Scrive il contenuto di una pila formattata in un file specificato.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e' il nome del file in cui scrivere il contenuto formattato. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pila} \cell }{e' la pila contenente i dati da scrivere nel file.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il file specificato deve essere aperto correttamente e accessibile in modalit\'E0 di scrittura. \par
+La pila deve essere valida e correttamente inizializzata. \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file Gestione_File.h\par \pard\plain 
+{\tc\tcl2 \v Gestione_File.h}
+{\xe \v Gestione_File.h}
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutti i prototipi per la gestione del file. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Header.h"}\par
+{\f2 #include "Pila.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b apriFile} (const char *, const char *, FILE **)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b leggiFile} (const char *, {\b Pila} **)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b chiudiFile} (FILE *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b scriviFile} (const char *, const char *, const char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b scriviFileFormattato} (const char *, {\b Pila} *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b scrivi_log} (const char *)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutti i prototipi per la gestione del file. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese Lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v apriFile\:Gestione_File.h}
+{\xe \v Gestione_File.h\:apriFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int apriFile (const char *  {\i nome_file}, const char *  {\i modo}, FILE **  {\i file})}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+apriFile e' una funzione che si occupa dell'apertura del file\par
+apriFile {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nome_file} \cell }{e' un puntatore a carattere \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *modo} \cell }{e' un puntatore a carattere \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *file} \cell }{e' un puntatore al file \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+nome_file non e' una stringa non nulla. \par
+nodo e' una stringa non nulla. \par
+file e' un puntatore al puntatore del file e non deve essere NULL. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Restituisce\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+restituisce 1 se il file e' stato aperto con successo \par
+restituisce 0 se il file non e' stato aperto con successo \par
+}}}}
+{\xe \v chiudiFile\:Gestione_File.h}
+{\xe \v Gestione_File.h\:chiudiFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int chiudiFile (FILE *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+chiudiFile e' una funzione che si occupa della chiusura del file\par
+chiudiFile {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *file} \cell }{e' un puntatore al file\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+ritorna 0 o 1. \par
+}}}}
+{\xe \v leggiFile\:Gestione_File.h}
+{\xe \v Gestione_File.h\:leggiFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void leggiFile (const char *  {\i nomeFile}, {\b Pila} **  {\i pilaPassata})}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+leggiFile e' una procedura che si occupa della lettura del file\par
+leggiFile\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e' un puntatore al nome del file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaPassata} \cell }{e' un puntatore al puntatore di una pila in cui memorizzare le stringhe lette. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+*nome_file una stringa non nulla \par
+}}}}
+{\xe \v scrivi_log\:Gestione_File.h}
+{\xe \v Gestione_File.h\:scrivi_log}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void scrivi_log (const char *  {\i messaggio})}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+scrivi_log \'E8 una procedura che tiene traccia delle operazioni svolte nel programma\par
+Scrive un messaggio di log in un file di log.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *messaggio} \cell }{e' il messaggio da scrivere nel file di log.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il file di log "Log.txt" deve essere accessibile e scrivibile. \par
+}}}}
+{\xe \v scriviFile\:Gestione_File.h}
+{\xe \v Gestione_File.h\:scriviFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void scriviFile (const char *  {\i nomeFile}, const char *  {\i msg}, const char *  {\i modo})}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+scriviFile e' una procedura che permette la scrittura su file\par
+Scrive un messaggio in un file specificato.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e' il nome del file in cui scrivere il messaggio. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *msg} \cell }{e' messaggio da scrivere nel file. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *modo} \cell }{e' la modalit\'E0 di apertura del file ("r", "w", "a").\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il file specificato deve essere aperto correttamente e accessibile in base alla modalit\'E0 specificata. \par
+}}}}
+{\xe \v scriviFileFormattato\:Gestione_File.h}
+{\xe \v Gestione_File.h\:scriviFileFormattato}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void scriviFileFormattato (const char *  {\i nomeFile}, {\b Pila} *  {\i pila})}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+scriviFileFormattato e' una procedura che permette la scrittura su file mantenendo il formato acquisito\par
+Scrive il contenuto di una pila formattata in un file specificato.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{e' il nome del file in cui scrivere il contenuto formattato. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pila} \cell }{e' la pila contenente i dati da scrivere nel file.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il file specificato deve essere aperto correttamente e accessibile in modalit\'E0 di scrittura. \par
+La pila deve essere valida e correttamente inizializzata. \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Gestione_File.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+Vai alla documentazione di questo file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef GESTIONE_FILE_H_INCLUDED}\par
+2 {\cf21 #define GESTIONE_FILE_H_INCLUDED}\par
+3 \par
+16 {\cf21 #include "Header.h"}\par
+17 {\cf21 #include "Pila.h"}\par
+18 \par
+22 {\cf18 int} apriFile({\cf17 const} {\cf18 char}*, {\cf17 const} {\cf18 char}*, FILE**);\par
+23 \par
+27 {\cf18 void} leggiFile({\cf17 const} {\cf18 char}*,Pila**);\par
+28 \par
+32 {\cf18 int} chiudiFile(FILE*);\par
+33 \par
+37 {\cf18 void} scriviFile({\cf17 const} {\cf18 char} *,{\cf17 const} {\cf18 char}*, {\cf17 const} {\cf18 char}*);\par
+38 \par
+42 {\cf18 void} scriviFileFormattato({\cf17 const} {\cf18 char} *,Pila *);\par
+43 \par
+47 {\cf18 void} scrivi_log({\cf17 const} {\cf18 char}*);\par
+48 \par
+49 {\cf21 #endif  GESTIONE_FILE_H_INCLUDED}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file Header.h\par \pard\plain 
+{\tc\tcl2 \v Header.h}
+{\xe \v Header.h}
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file esegue le seguenti operazioni:\par
+ Include tutte le librerie di "c" necessarie\par
+ Definisce la struttura dinamica di tipo pila. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include <stdbool.h>}\par
+{\f2 #include <conio.h>}\par
+{\f2 #include <ctype.h>}\par
+{\f2 #include <time.h>}\par
+{\f2 #include <unistd.h>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Definizioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b SIZE_NOME_FILE}\~ 50\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MIN_SIZE}\~ 30\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file esegue le seguenti operazioni:\par
+ Include tutte le librerie di "c" necessarie\par
+ Definisce la struttura dinamica di tipo pila. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle definizioni\par
+\pard\plain 
+{\xe \v MIN_SIZE\:Header.h}
+{\xe \v Header.h\:MIN_SIZE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MIN_SIZE\~ 30}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+MIN_SIZE contiene il numero di caratteri delle parole da sostituire \par
+}}
+{\xe \v SIZE_NOME_FILE\:Header.h}
+{\xe \v Header.h\:SIZE_NOME_FILE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define SIZE_NOME_FILE\~ 50}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+SIZE_NOME_FILE contiene la dimensione massima del nome del file \par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Header.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+Vai alla documentazione di questo file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef HEADER_H_INCLUDED}\par
+2 {\cf21 #define HEADER_H_INCLUDED}\par
+3 \par
+16 {\cf21 #include <stdio.h>}\par
+17 {\cf21 #include <stdlib.h>}\par
+18 {\cf21 #include <string.h>}\par
+19 {\cf21 #include <stdbool.h>}\par
+20 {\cf21 #include <conio.h>}\par
+21 {\cf21 #include <ctype.h>}\par
+22 {\cf21 #include <time.h>}\par
+23 {\cf21 #include <unistd.h>}\par
+24 \par
+28 {\cf21 #define SIZE_NOME_FILE 50}\par
+29 \par
+33 {\cf21 #define MIN_SIZE 30}\par
+34 \par
+35 {\cf21 #endif  HEADER_H_INCLUDED}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file InputOutput.c\par \pard\plain 
+{\tc\tcl2 \v InputOutput.c}
+{\xe \v InputOutput.c}
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le funzioni di Input e Output verso l'utente. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Header.h"}\par
+{\f2 #include "Pila.h"}\par
+{\f2 #include "InputOutput.h"}\par
+{\f2 #include "Gestione_File.h"}\par
+{\f2 #include "Difensiva.h"}\par
+{\f2 #include "Funzioni.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b visualizzaMenu} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b visualizzaChiusura} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b gestoreScelta} ({\b Pila} *pila)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b acquisisciNomeFile} (char *nomeFile)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b acquisisciStringa} (char *str)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le funzioni di Input e Output verso l'utente. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v acquisisciNomeFile\:InputOutput.c}
+{\xe \v InputOutput.c\:acquisisciNomeFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char * acquisisciNomeFile (char *  {\i nomeFile})}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Acquisisce il nome del file di input dall'utente.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{Il puntatore al buffer in cui memorizzare il nome del file. Deve essere inizializzato con una dimensione sufficiente per contenere il nome del file.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il nome del file viene controllato dalla funzione validatore_file. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il nome del file di input viene acquisito correttamente dall'utente e restituito come stringa. \par
+}}}}
+{\xe \v acquisisciStringa\:InputOutput.c}
+{\xe \v InputOutput.c\:acquisisciStringa}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char * acquisisciStringa (char *  {\i str})}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Acquisisce una stringa dall'utente.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *str} \cell }{e' il puntatore al buffer in cui memorizzare la stringa acquisita. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+La stringa viene controllata dalla funzione controllo stringa. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+La stringa viene acquisita correttamente dall'utente, controllata e restituita come risultato. \par
+}}}}
+{\xe \v gestoreScelta\:InputOutput.c}
+{\xe \v InputOutput.c\:gestoreScelta}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void gestoreScelta ({\b Pila} *  {\i pila})}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gestisce la scelta dell'utente e esegue le operazioni corrispondenti.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pila} \cell }{La pila di dati su cui eseguire le operazioni.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+La pila deve essere valida e correttamente inizializzata. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Le operazioni selezionate dall'utente vengono eseguite correttamente sulla pila. La memoria allocata per le pile dopo l'utilizzo viene rilasciata. \par
+}}}}
+{\xe \v visualizzaChiusura\:InputOutput.c}
+{\xe \v InputOutput.c\:visualizzaChiusura}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void visualizzaChiusura ()}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Visualizza il messaggio di chiusura dell'applicazione, esegue un countdown visivo e registra la chiusura nel file di log.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+L'output standard (stdout) deve essere disponibile per la stampa del messaggio di chiusura. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+La chiusura dell'applicazione viene registrata nel file di log. \par
+}}}}
+{\xe \v visualizzaMenu\:InputOutput.c}
+{\xe \v InputOutput.c\:visualizzaMenu}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void visualizzaMenu ()}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Visualizza il menu di scelta dell'applicazione.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+L'output standard (stdout) deve essere disponibile per la stampa del menu. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il menu viene visualizzato correttamente sulla console. \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file InputOutput.h\par \pard\plain 
+{\tc\tcl2 \v InputOutput.h}
+{\xe \v InputOutput.h}
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte i prototipi di Input e Output verso l'utente. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Header.h"}\par
+{\f2 #include "Pila.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b acquisisciNomeFile} (char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b acquisisciStringa} (char *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b visualizzaMenu} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b gestoreScelta} ({\b Pila} *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b visualizzaChiusura} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte i prototipi di Input e Output verso l'utente. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v acquisisciNomeFile\:InputOutput.h}
+{\xe \v InputOutput.h\:acquisisciNomeFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char * acquisisciNomeFile (char *  {\i nomeFile})}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+acquisiscinomefile acquisisce in input il nome del file\par
+Acquisisce il nome del file di input dall'utente.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *nomeFile} \cell }{Il puntatore al buffer in cui memorizzare il nome del file. Deve essere inizializzato con una dimensione sufficiente per contenere il nome del file.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il nome del file viene controllato dalla funzione validatore_file. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il nome del file di input viene acquisito correttamente dall'utente e restituito come stringa. \par
+}}}}
+{\xe \v acquisisciStringa\:InputOutput.h}
+{\xe \v InputOutput.h\:acquisisciStringa}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char * acquisisciStringa (char *  {\i str})}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+acquisisciStringa acquisisce una stringa dalla tastiera\par
+Acquisisce una stringa dall'utente.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *str} \cell }{e' il puntatore al buffer in cui memorizzare la stringa acquisita. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+La stringa viene controllata dalla funzione controllo stringa. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+La stringa viene acquisita correttamente dall'utente, controllata e restituita come risultato. \par
+}}}}
+{\xe \v gestoreScelta\:InputOutput.h}
+{\xe \v InputOutput.h\:gestoreScelta}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void gestoreScelta ({\b Pila} *  {\i pila})}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+gestoreScelta \'E8 una procedura che gestisce la scelta dell'utente\par
+Gestisce la scelta dell'utente e esegue le operazioni corrispondenti.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pila} \cell }{La pila di dati su cui eseguire le operazioni.\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+La pila deve essere valida e correttamente inizializzata. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Le operazioni selezionate dall'utente vengono eseguite correttamente sulla pila. La memoria allocata per le pile dopo l'utilizzo viene rilasciata. \par
+}}}}
+{\xe \v visualizzaChiusura\:InputOutput.h}
+{\xe \v InputOutput.h\:visualizzaChiusura}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void visualizzaChiusura ()}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+visualizzaChiusura e' un'animazione di chiusura del gestionale\par
+Visualizza il messaggio di chiusura dell'applicazione, esegue un countdown visivo e registra la chiusura nel file di log.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+L'output standard (stdout) deve essere disponibile per la stampa del messaggio di chiusura. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+La chiusura dell'applicazione viene registrata nel file di log. \par
+}}}}
+{\xe \v visualizzaMenu\:InputOutput.h}
+{\xe \v InputOutput.h\:visualizzaMenu}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void visualizzaMenu ()}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+visualizzaMenu e' una funzione che permette di visualizzare il menu di scelta\par
+Visualizza il menu di scelta dell'applicazione.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+L'output standard (stdout) deve essere disponibile per la stampa del menu. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il menu viene visualizzato correttamente sulla console. \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+InputOutput.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Vai alla documentazione di questo file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef INPUTOUTPUT_H_INCLUDED}\par
+2 {\cf21 #define INPUTOUTPUT_H_INCLUDED}\par
+3 \par
+16 {\cf21 #include "Header.h"}\par
+17 {\cf21 #include "Pila.h"}\par
+18 \par
+22 {\cf18 char}* acquisisciNomeFile({\cf18 char}*);\par
+23 \par
+27 {\cf18 char}* acquisisciStringa({\cf18 char}*);\par
+28 \par
+32 {\cf18 void} visualizzaMenu();\par
+33 \par
+37 {\cf18 void} gestoreScelta(Pila *);\par
+38 \par
+42 {\cf18 void} visualizzaChiusura();\par
+43 \par
+44 \par
+45 {\cf21 #endif INPUTOUTPUT_H_INCLUDED}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file main.c\par \pard\plain 
+{\tc\tcl2 \v main.c}
+{\xe \v main.c}
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "InputOutput.h"}\par
+{\f2 #include "Pila.h"}\par
+{\f2 #include "Gestione_File.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v main\:main.c}
+{\xe \v main.c\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Punto di start dell'applicazione.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Nessun requisito preesistente. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Postcondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+L'applicazione viene avviata correttamente. \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file Pila.c\par \pard\plain 
+{\tc\tcl2 \v Pila.c}
+{\xe \v Pila.c}
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le funzioni di gestione della pila. }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "Header.h"}\par
+{\f2 #include "Pila.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b push} ({\b Pila} **pilaPassata, const char *dato)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b stampaPila} ({\b Pila} *pilaCorrente)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b invertiPila} ({\b Pila} **pilaPassata)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b svuotaPila} ({\b Pila} **pila)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutte le funzioni di gestione della pila. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco /**\par
+}}/** Push {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s80\li0\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaPassata} \cell }{e' un puntatore al puntatore della {\b Pila} \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *dato} \cell }{e' una stringa \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il puntatore alla pila non deve essere NULL \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v invertiPila\:Pila.c}
+{\xe \v Pila.c\:invertiPila}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void invertiPila ({\b Pila} **  {\i pilaPassata})}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+invertiPila {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaPassata} \cell }{e' un puntatore al puntatore della {\b Pila} \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il puntatore alla pila non deve essere NULL \par
+}}}}
+{\xe \v push\:Pila.c}
+{\xe \v Pila.c\:push}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void push ({\b Pila} **  {\i pilaPassata}, const char *  {\i dato})}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v stampaPila\:Pila.c}
+{\xe \v Pila.c\:stampaPila}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void stampaPila ({\b Pila} *  {\i pilaCorrente})}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+stampaPila {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaCorrente} \cell }{e' un puntatore che punta alla pila \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il puntatore alla pila non deve essere NULL \par
+}}}}
+{\xe \v svuotaPila\:Pila.c}
+{\xe \v Pila.c\:svuotaPila}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void svuotaPila ({\b Pila} **  {\i pila})}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+svuotaPila {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaPassata} \cell }{e' un puntatore al puntatore della {\b Pila} \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il puntatore alla pila non deve essere NULL \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Riferimenti per il file Pila.h\par \pard\plain 
+{\tc\tcl2 \v Pila.h}
+{\xe \v Pila.h}
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutti i prototipi di gestione della pila. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Strutture dati\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b Pila}}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Ridefinizioni di tipo (typedef)\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef struct {\b Pila} {\b Pila}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Funzioni\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b push} ({\b Pila} **, const char[])\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b stampaPila} ({\b Pila} *)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b invertiPila} ({\b Pila} **)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b svuotaPila} ({\b Pila} **)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descrizione dettagliata\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Questo file include tutti i prototipi di gestione della pila. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Versione\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0.0 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Data\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+06/07/2023 \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Autori\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Calabrese lorenzo \par
+Cappelluti Claudia Antonia \par
+Conforti Francesco /**\par
+}}SIZE_PILA definisce la dimensione del dato char della struct \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle ridefinizioni di tipo (typedef)\par
+\pard\plain 
+{\xe \v Pila\:Pila.h}
+{\xe \v Pila.h\:Pila}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef struct {\b Pila} {\b Pila}}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+typedef struct {\b Pila} definisce una struttura di tipo Stack \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentazione delle funzioni\par
+\pard\plain 
+{\xe \v invertiPila\:Pila.h}
+{\xe \v Pila.h\:invertiPila}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void invertiPila ({\b Pila} **  {\i pilaPassata})}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+invertiPila inverte la pila ricevuta come parametro\par
+invertiPila {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaPassata} \cell }{e' un puntatore al puntatore della {\b Pila} \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il puntatore alla pila non deve essere NULL \par
+}}}}
+{\xe \v push\:Pila.h}
+{\xe \v Pila.h\:push}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void push ({\b Pila} ** , const char [])}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+push inserisce un nuova stringa al top della pila \par
+}}
+{\xe \v stampaPila\:Pila.h}
+{\xe \v Pila.h\:stampaPila}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void stampaPila ({\b Pila} *  {\i pilaCorrente})}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+stampaPila e' una procedura in grado di stampare la pila ricevuta come parametro\par
+stampaPila {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaCorrente} \cell }{e' un puntatore che punta alla pila \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il puntatore alla pila non deve essere NULL \par
+}}}}
+{\xe \v svuotaPila\:Pila.h}
+{\xe \v Pila.h\:svuotaPila}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void svuotaPila ({\b Pila} **  {\i pila})}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+svuotaPila elimina gli elementi di una pila\par
+svuotaPila {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parametri\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx1224
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx3061
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{in\cell }{{\i *pilaPassata} \cell }{e' un puntatore al puntatore della {\b Pila} \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Precondizione\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Il puntatore alla pila non deve essere NULL \par
+}}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Pila.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+Vai alla documentazione di questo file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef PILA_H_INCLUDED}\par
+2 {\cf21 #define PILA_H_INCLUDED}\par
+3 \par
+18 {\cf21 #define SIZE_PILA 100}\par
+19 \par
+23 {\cf17 typedef} {\cf17 struct }Pila \{\par
+24     {\cf18 char} dato[SIZE_PILA];\par
+25     {\cf17 struct }Pila* nextPtr;\par
+26 \} Pila;\par
+27 \par
+32 {\cf18 void} push(Pila**, {\cf17 const} {\cf18 char}[]);\par
+33 \par
+37 {\cf18 void} stampaPila(Pila*);\par
+38 \par
+42 {\cf18 void} invertiPila(Pila**);\par
+43 \par
+47 {\cf18 void} svuotaPila(Pila**);\par
+48 \par
+49 {\cf21 #endif  PILA_H_INCLUDED}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Indice\par 
+\pard\plain 
+{\tc \v Indice}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

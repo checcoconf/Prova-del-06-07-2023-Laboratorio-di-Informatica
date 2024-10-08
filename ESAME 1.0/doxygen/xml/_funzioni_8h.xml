@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="it">
+  <compounddef id="_funzioni_8h" kind="file" language="C++">
+    <compoundname>Funzioni.h</compoundname>
+    <includes refid="_header_8h" local="yes">header.h</includes>
+    <includes refid="_pila_8h" local="yes">Pila.h</includes>
+    <includedby refid="_funzioni_8c" local="yes">Funzioni.c</includedby>
+    <includedby refid="_input_output_8c" local="yes">InputOutput.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Funzioni.h</label>
+        <link refid="_funzioni_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>header.h</label>
+        <link refid="_header_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Pila.h</label>
+        <link refid="_pila_8h"/>
+      </node>
+      <node id="7">
+        <label>conio.h</label>
+      </node>
+      <node id="8">
+        <label>ctype.h</label>
+      </node>
+      <node id="6">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="9">
+        <label>time.h</label>
+      </node>
+      <node id="10">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Funzioni.c</label>
+        <link refid="_funzioni_8c"/>
+      </node>
+      <node id="1">
+        <label>Funzioni.h</label>
+        <link refid="_funzioni_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>InputOutput.c</label>
+        <link refid="_input_output_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_funzioni_8h_1acfbf1e7a8c97ce1f0f67b10bf345433a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_pila" kindref="compound">Pila</ref> *</type>
+        <definition>Pila * sostituisci</definition>
+        <argsstring>(Pila **, const char *, const char *)</argsstring>
+        <name>sostituisci</name>
+        <param>
+          <type><ref refid="struct_pila" kindref="compound">Pila</ref> **</type>
+          <declname>pila</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>elementoDaSostituire</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>nuovoElemento</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sostituisci restituisce la pila con gli elementi sostituiti</para>
+<para>sostituisci <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pila</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos;un puntatore alla struct <ref refid="struct_pila" kindref="compound">Pila</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*elementoDaSostituire</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos;un puntatore a carattere </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*nuovoElemento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore a carattere </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>la pila e&apos; nulla </para>
+</simplesect>
+<simplesect kind="return"><para>restituisce una nuova pila con le dovute sostituzioni </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" line="22" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.c" bodystart="28" bodyend="64" declfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" declline="22" declcolumn="6"/>
+        <references refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" compoundref="_pila_8h" startline="24">Pila::dato</references>
+        <references refid="_input_output_8c_1aa8565c0396f63828505d9beb65719849" compoundref="_input_output_8c" startline="65" endline="190">gestoreScelta</references>
+        <references refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" compoundref="_pila_8h" startline="25">Pila::nextPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="_funzioni_8h_1ac2c933f1d4c2b78c84e4d00bbcd2f6f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_pila" kindref="compound">Pila</ref> *</type>
+        <definition>Pila * bubbleSortRicorsivo</definition>
+        <argsstring>(Pila **)</argsstring>
+        <name>bubbleSortRicorsivo</name>
+        <param>
+          <type><ref refid="struct_pila" kindref="compound">Pila</ref> **</type>
+          <declname>pila</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bubbleSortRicorsivo restituisce la pila ordinata</para>
+<para>bubbleSortRicorsivo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pila</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore alla struttura <ref refid="struct_pila" kindref="compound">Pila</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>la pila non deve essere nulla e nemmemeno l&apos;elemento successivo </para>
+</simplesect>
+<simplesect kind="return"><para>restituisce una nuova pila ordinata secondo una specifica relazione d&apos;ordine </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" line="27" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.c" bodystart="146" bodyend="169" declfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" declline="27" declcolumn="6"/>
+        <references refid="_funzioni_8c_1a2e1889b0fa0a7ab25a627c7c1135b43a" compoundref="_funzioni_8c" startline="146" endline="169">bubbleSortRicorsivo</references>
+        <references refid="_funzioni_8c_1a90609c92cfde3ffc9b213de5b781228c" compoundref="_funzioni_8c" startline="128" endline="137">clonaPila</references>
+        <references refid="_funzioni_8c_1a655f67b2984bff476d1f97750a5764d8" compoundref="_funzioni_8c" startline="72" endline="79">contaAlfanumerico</references>
+        <references refid="_funzioni_8c_1ae386eaa89c4fb31c0159d9e2dc54c97a" compoundref="_funzioni_8c" startline="88" endline="95">contaNumeri</references>
+        <references refid="_funzioni_8c_1a9d9b4cec3afa3def0a78b2fdfde0418a" compoundref="_funzioni_8c" startline="103" endline="111">contaVocali</references>
+        <references refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" compoundref="_pila_8h" startline="24">Pila::dato</references>
+        <references refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" compoundref="_pila_8h" startline="25">Pila::nextPtr</references>
+        <references refid="_funzioni_8c_1a4df0a9304b9de6f66dc16e022fd6bdf3" compoundref="_funzioni_8c" startline="117" endline="122">swap</references>
+      </memberdef>
+      <memberdef kind="function" id="_funzioni_8h_1a44ee70f4970dc4d9389a49d5242127c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void swap</definition>
+        <argsstring>(Pila *, Pila *)</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="struct_pila" kindref="compound">Pila</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_pila" kindref="compound">Pila</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>swap esegue lo scambio tra i top delle due pile ricevute come parametro</para>
+<para>swap <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore alla struttura <ref refid="struct_pila" kindref="compound">Pila</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">*b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore alla struttura <ref refid="struct_pila" kindref="compound">Pila</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" line="32" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.c" bodystart="117" bodyend="122" declfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" declline="32" declcolumn="6"/>
+        <references refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" compoundref="_pila_8h" startline="24">Pila::dato</references>
+      </memberdef>
+      <memberdef kind="function" id="_funzioni_8h_1adab8f5443029b08de107b0bb0cb5a9e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int contaVocali</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>contaVocali</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>contaVocali conta le vocali della stringa ricevuta come parametro</para>
+<para>contaVocali <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore a carattere </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>la stringa non deve essere nulla </para>
+</simplesect>
+<simplesect kind="return"><para>restituisce il numero di vocali presenti nella stringa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" line="37" column="5" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.c" bodystart="103" bodyend="111" declfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" declline="37" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="_funzioni_8h_1a39cb913c8901be20bccbe05aabf85abc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int contaNumeri</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>contaNumeri</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>contaNumeri conta i numeri della stringa ricevuta come parametro</para>
+<para>contaNumeri <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore a carattere </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>la stringa non deve essere nulla </para>
+</simplesect>
+<simplesect kind="return"><para>restituisce il numero dei numeri presenti nella stringa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" line="43" column="5" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.c" bodystart="88" bodyend="95" declfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" declline="43" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="_funzioni_8h_1a511adb3d36adabf407c6d33215220a04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int contaAlfanumerico</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>contaAlfanumerico</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>contaAlfanumerico conta gli elementi della stringa ricevuta come parametro che sono delle lettere :</para>
+<para>contaAlfanumerico <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore a carattere </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>la stringa non deve essere nulla </para>
+</simplesect>
+<simplesect kind="return"><para>restituisce il numero di caratteri alfanumerici </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" line="48" column="5" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.c" bodystart="72" bodyend="79" declfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" declline="48" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="_funzioni_8h_1a5eb055045fa479e030dd99bfc1fcbea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_pila" kindref="compound">Pila</ref> *</type>
+        <definition>Pila * clonaPila</definition>
+        <argsstring>(const Pila *)</argsstring>
+        <name>clonaPila</name>
+        <param>
+          <type>const <ref refid="struct_pila" kindref="compound">Pila</ref> *</type>
+          <declname>pilaOriginale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>clonaPila crea una copia di una pila passata per riferimento</para>
+<para>clonaPila <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pilaOriginale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; un puntatore alla struttura <ref refid="struct_pila" kindref="compound">Pila</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>restituisce una pila clonata a quella passata per riferimento </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" line="53" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.c" bodystart="128" bodyend="137" declfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h" declline="53" declcolumn="6"/>
+        <references refid="_funzioni_8c_1a90609c92cfde3ffc9b213de5b781228c" compoundref="_funzioni_8c" startline="128" endline="137">clonaPila</references>
+        <references refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" compoundref="_pila_8h" startline="24">Pila::dato</references>
+        <references refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" compoundref="_pila_8h" startline="25">Pila::nextPtr</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Questo file include i prototipi delle funzioni di dominio. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>06/07/2023 </para>
+</simplesect>
+<simplesect kind="authors"><para>Calabrese Lorenzo </para>
+</simplesect>
+<simplesect kind="authors"><para>Cappelluti Claudia Antonia </para>
+</simplesect>
+<simplesect kind="authors"><para>Conforti Francesco </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FUNZIONI_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FUNZIONI_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_header_8h" kindref="compound">header.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_pila_8h" kindref="compound">Pila.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="struct_pila" kindref="compound">Pila</ref><sp/>*<ref refid="_funzioni_8h_1acfbf1e7a8c97ce1f0f67b10bf345433a" kindref="member">sostituisci</ref>(<ref refid="struct_pila" kindref="compound">Pila</ref>**,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/><ref refid="_funzioni_8h_1ac2c933f1d4c2b78c84e4d00bbcd2f6f8" kindref="member">bubbleSortRicorsivo</ref>(<ref refid="struct_pila" kindref="compound">Pila</ref><sp/>**);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_funzioni_8h_1a44ee70f4970dc4d9389a49d5242127c3" kindref="member">swap</ref>(<ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/>,<sp/><ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_funzioni_8h_1adab8f5443029b08de107b0bb0cb5a9e7" kindref="member">contaVocali</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_funzioni_8h_1a39cb913c8901be20bccbe05aabf85abc" kindref="member">contaNumeri</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_funzioni_8h_1a511adb3d36adabf407c6d33215220a04" kindref="member">contaAlfanumerico</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/><ref refid="_funzioni_8h_1a5eb055045fa479e030dd99bfc1fcbea9" kindref="member">clonaPila</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_pila" kindref="compound">Pila</ref>*);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>FUNZIONI_H_INCLUDED</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Funzioni.h"/>
+  </compounddef>
+</doxygen>

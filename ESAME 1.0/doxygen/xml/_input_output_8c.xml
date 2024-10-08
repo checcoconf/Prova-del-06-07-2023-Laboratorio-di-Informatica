@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="it">
+  <compounddef id="_input_output_8c" kind="file" language="C++">
+    <compoundname>InputOutput.c</compoundname>
+    <includes refid="_header_8h" local="yes">Header.h</includes>
+    <includes refid="_pila_8h" local="yes">Pila.h</includes>
+    <includes refid="_input_output_8h" local="yes">InputOutput.h</includes>
+    <includes refid="_gestione___file_8h" local="yes">Gestione_File.h</includes>
+    <includes refid="_difensiva_8h" local="yes">Difensiva.h</includes>
+    <includes refid="_funzioni_8h" local="yes">Funzioni.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>Difensiva.h</label>
+        <link refid="_difensiva_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Funzioni.h</label>
+        <link refid="_funzioni_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Gestione_File.h</label>
+        <link refid="_gestione___file_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Header.h</label>
+        <link refid="_header_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>InputOutput.c</label>
+        <link refid="_input_output_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>InputOutput.h</label>
+        <link refid="_input_output_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Pila.h</label>
+        <link refid="_pila_8h"/>
+      </node>
+      <node id="7">
+        <label>conio.h</label>
+      </node>
+      <node id="8">
+        <label>ctype.h</label>
+      </node>
+      <node id="6">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="9">
+        <label>time.h</label>
+      </node>
+      <node id="10">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_input_output_8c_1a6e78db0bf1ff7ea85e626d3a91428799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void visualizzaMenu</definition>
+        <argsstring>()</argsstring>
+        <name>visualizzaMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Visualizza il menu di scelta dell&apos;applicazione.</para>
+<para><simplesect kind="pre"><para>L&apos;output standard (stdout) deve essere disponibile per la stampa del menu. </para>
+</simplesect>
+<simplesect kind="post"><para>Il menu viene visualizzato correttamente sulla console. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" line="27" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="_input_output_8c_1a366895b082490fb1505481432fa1cb05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void visualizzaChiusura</definition>
+        <argsstring>()</argsstring>
+        <name>visualizzaChiusura</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Visualizza il messaggio di chiusura dell&apos;applicazione, esegue un countdown visivo e registra la chiusura nel file di log.</para>
+<para><simplesect kind="pre"><para>L&apos;output standard (stdout) deve essere disponibile per la stampa del messaggio di chiusura. </para>
+</simplesect>
+<simplesect kind="post"><para>La chiusura dell&apos;applicazione viene registrata nel file di log. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" line="46" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" bodystart="46" bodyend="54"/>
+        <references refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" compoundref="_gestione___file_8c" startline="166" endline="184">scrivi_log</references>
+      </memberdef>
+      <memberdef kind="function" id="_input_output_8c_1aa8565c0396f63828505d9beb65719849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gestoreScelta</definition>
+        <argsstring>(Pila *pila)</argsstring>
+        <name>gestoreScelta</name>
+        <param>
+          <type><ref refid="struct_pila" kindref="compound">Pila</ref> *</type>
+          <declname>pila</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gestisce la scelta dell&apos;utente e esegue le operazioni corrispondenti.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*pila</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La pila di dati su cui eseguire le operazioni.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>La pila deve essere valida e correttamente inizializzata. </para>
+</simplesect>
+<simplesect kind="post"><para>Le operazioni selezionate dall&apos;utente vengono eseguite correttamente sulla pila. La memoria allocata per le pile dopo l&apos;utilizzo viene rilasciata. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" line="65" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" bodystart="65" bodyend="190"/>
+        <references refid="_input_output_8c_1a49e4222793afb123ae9a290b87c829f2" compoundref="_input_output_8c" startline="201" endline="208">acquisisciNomeFile</references>
+        <references refid="_input_output_8c_1a22bbc787309e15c25f5f5ff52c6f87e9" compoundref="_input_output_8c" startline="217" endline="221">acquisisciStringa</references>
+        <references refid="_funzioni_8c_1a2e1889b0fa0a7ab25a627c7c1135b43a" compoundref="_funzioni_8c" startline="146" endline="169">bubbleSortRicorsivo</references>
+        <references refid="_pila_8c_1a6950fe96e75654670b24ae382d0b74ec" compoundref="_pila_8c" startline="58" endline="68">invertiPila</references>
+        <references refid="_gestione___file_8c_1a2876fce7ec0bafb317cba4d6bc365f5d" compoundref="_gestione___file_8c" startline="58" endline="96">leggiFile</references>
+        <references refid="_header_8h_1a278694c2333c9826f21ddd2c2d220f66" compoundref="_header_8h" startline="33">MIN_SIZE</references>
+        <references refid="_difensiva_8c_1a5fee0100cdbdb4d08c2186c1762ce801" compoundref="_difensiva_8c" startline="143" endline="149">pulisciFile</references>
+        <references refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" compoundref="_gestione___file_8c" startline="166" endline="184">scrivi_log</references>
+        <references refid="_gestione___file_8c_1a96e75ff208f3c092478847945f49137d" compoundref="_gestione___file_8c" startline="122" endline="157">scriviFileFormattato</references>
+        <references refid="_header_8h_1adb6bba367ed4fc2c16ca58de84a34447" compoundref="_header_8h" startline="28">SIZE_NOME_FILE</references>
+        <references refid="_funzioni_8c_1a58bad8ca508eebb0e11542f293215213" compoundref="_funzioni_8c" startline="28" endline="64">sostituisci</references>
+        <references refid="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" compoundref="_pila_8c" startline="40" endline="51">stampaPila</references>
+        <references refid="_pila_8c_1aa98f13b874d7e30dce74c58f0424e2d8" compoundref="_pila_8c" startline="75" endline="85">svuotaPila</references>
+        <references refid="_input_output_8c_1a366895b082490fb1505481432fa1cb05" compoundref="_input_output_8c" startline="46" endline="54">visualizzaChiusura</references>
+        <references refid="_input_output_8c_1a6e78db0bf1ff7ea85e626d3a91428799" compoundref="_input_output_8c" startline="27" endline="38">visualizzaMenu</references>
+      </memberdef>
+      <memberdef kind="function" id="_input_output_8c_1a49e4222793afb123ae9a290b87c829f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * acquisisciNomeFile</definition>
+        <argsstring>(char *nomeFile)</argsstring>
+        <name>acquisisciNomeFile</name>
+        <param>
+          <type>char *</type>
+          <declname>nomeFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquisisce il nome del file di input dall&apos;utente.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*nomeFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Il puntatore al buffer in cui memorizzare il nome del file. Deve essere inizializzato con una dimensione sufficiente per contenere il nome del file.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Il nome del file viene controllato dalla funzione validatore_file. </para>
+</simplesect>
+<simplesect kind="post"><para>Il nome del file di input viene acquisito correttamente dall&apos;utente e restituito come stringa. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" line="201" column="7" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" bodystart="201" bodyend="208"/>
+        <references refid="_difensiva_8c_1a794ce04c28daadf80d72788064d326aa" compoundref="_difensiva_8c" startline="63" endline="85">validatore_file</references>
+      </memberdef>
+      <memberdef kind="function" id="_input_output_8c_1a22bbc787309e15c25f5f5ff52c6f87e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * acquisisciStringa</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>acquisisciStringa</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquisisce una stringa dall&apos;utente.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">*str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>e&apos; il puntatore al buffer in cui memorizzare la stringa acquisita. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>La stringa viene controllata dalla funzione controllo stringa. </para>
+</simplesect>
+<simplesect kind="post"><para>La stringa viene acquisita correttamente dall&apos;utente, controllata e restituita come risultato. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" line="217" column="6" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c" bodystart="217" bodyend="221"/>
+        <references refid="_difensiva_8c_1a631d4f696e52cb1c67a3756a7fa86fd7" compoundref="_difensiva_8c" startline="106" endline="136">controlloStringa</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Questo file include tutte le funzioni di Input e Output verso l&apos;utente. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>06/07/2023 </para>
+</simplesect>
+<simplesect kind="authors"><para>Calabrese lorenzo </para>
+</simplesect>
+<simplesect kind="authors"><para>Cappelluti Claudia Antonia </para>
+</simplesect>
+<simplesect kind="authors"><para>Conforti Francesco </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_header_8h" kindref="compound">Header.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_pila_8h" kindref="compound">Pila.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_input_output_8h" kindref="compound">InputOutput.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_gestione___file_8h" kindref="compound">Gestione_File.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_difensiva_8h" kindref="compound">Difensiva.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_funzioni_8h" kindref="compound">Funzioni.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_input_output_8c_1a6e78db0bf1ff7ea85e626d3a91428799" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_input_output_8c_1a6e78db0bf1ff7ea85e626d3a91428799" kindref="member">visualizzaMenu</ref>(){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B<sp/>E<sp/>N<sp/>V<sp/>E<sp/>N<sp/>U<sp/>T<sp/>O<sp/>!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M<sp/>E<sp/>N<sp/>U&apos;<sp/><sp/><sp/>D<sp/>I<sp/><sp/><sp/><sp/><sp/>S<sp/>C<sp/>E<sp/>L<sp/>T<sp/>A<sp/>:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Premere<sp/>il<sp/>tasto<sp/>|1|<sp/>per<sp/>acquisire<sp/>i<sp/>dati<sp/>da<sp/>file<sp/>con<sp/>visualizzazione<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Premere<sp/>il<sp/>tasto<sp/>|2|<sp/>per<sp/>effettuare<sp/>una<sp/>sostituzione<sp/>all&apos;interno<sp/>della<sp/>pila<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Premere<sp/>il<sp/>tasto<sp/>|3|<sp/>per<sp/>effettuare<sp/>l&apos;ordinamento<sp/>della<sp/>pila<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>Premere<sp/>il<sp/>tasto<sp/>|4|<sp/>per<sp/>chiudere<sp/>l&apos;appilcazione<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;<sp/>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_input_output_8c_1a366895b082490fb1505481432fa1cb05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_input_output_8c_1a366895b082490fb1505481432fa1cb05" kindref="member">visualizzaChiusura</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Chiusura<sp/>in<sp/>corso&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>3;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sleep(1);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nArrivederci.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Chiusura&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_input_output_8c_1aa8565c0396f63828505d9beb65719849" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_input_output_8c_1aa8565c0396f63828505d9beb65719849" kindref="member">gestoreScelta</ref>(<ref refid="struct_pila" kindref="compound">Pila</ref>*<sp/>pila){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_pila" kindref="compound">Pila</ref><sp/>*pilaOrdinata<sp/>=<sp/>NULL,<sp/>*pilaSostituita<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nomeFile[<ref refid="_header_8h_1adb6bba367ed4fc2c16ca58de84a34447" kindref="member">SIZE_NOME_FILE</ref>],<sp/>daSostituire[<ref refid="_header_8h_1a278694c2333c9826f21ddd2c2d220f66" kindref="member">MIN_SIZE</ref>],daInserire[<ref refid="_header_8h_1a278694c2333c9826f21ddd2c2d220f66" kindref="member">MIN_SIZE</ref>];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scelta<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_input_output_8c_1a6e78db0bf1ff7ea85e626d3a91428799" kindref="member">visualizzaMenu</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Effettua<sp/>una<sp/>scelta<sp/>--&gt;<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,&amp;scelta);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(((scelta<sp/>&gt;<sp/>4<sp/>||<sp/>scelta<sp/>&lt;<sp/>2)<sp/>||<sp/>pila<sp/>==<sp/>NULL)<sp/>&amp;&amp;<sp/>(pila<sp/>==<sp/>NULL<sp/>&amp;&amp;<sp/>scelta<sp/>!=<sp/>1<sp/>&amp;&amp;<sp/>scelta<sp/>!=<sp/>4)){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(scelta<sp/>&gt;<sp/>4<sp/>||<sp/>scelta<sp/>&lt;<sp/>1){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>puts(</highlight><highlight class="stringliteral">&quot;|ERRORE|<sp/>-<sp/>L&apos;opzione<sp/>%d<sp/>la<sp/>scelta<sp/>non<sp/>e&apos;<sp/>corretta.\nRiprova<sp/>con<sp/>un<sp/>valore<sp/>valido<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Scelta<sp/>non<sp/>corretta&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pila<sp/>==<sp/>NULL<sp/>&amp;&amp;<sp/>scelta<sp/>!=<sp/>1<sp/>&amp;&amp;<sp/>scelta<sp/>!=<sp/>4){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;|ERRORE|<sp/>-<sp/>La<sp/>pila<sp/>e&apos;<sp/>vuota!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Pila<sp/>vuota&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Riscrivi<sp/>qui<sp/>--&gt;<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>&amp;scelta);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(scelta)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Scelta<sp/>1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pila_8c_1aa98f13b874d7e30dce74c58f0424e2d8" kindref="member">svuotaPila</ref>(&amp;pila);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a2876fce7ec0bafb317cba4d6bc365f5d" kindref="member">leggiFile</ref>(<ref refid="_input_output_8c_1a49e4222793afb123ae9a290b87c829f2" kindref="member">acquisisciNomeFile</ref>(nomeFile),&amp;pila);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Inizio<sp/>lettura<sp/>file<sp/>Input.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pila_8c_1a6950fe96e75654670b24ae382d0b74ec" kindref="member">invertiPila</ref>(&amp;pila);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Stampa<sp/>pila&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" kindref="member">stampaPila</ref>(pila);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;pause&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Fine<sp/>lettura<sp/>file<sp/>Input.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Scelta<sp/>2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_difensiva_8c_1a5fee0100cdbdb4d08c2186c1762ce801" kindref="member">pulisciFile</ref>(</highlight><highlight class="stringliteral">&quot;Sostituisci.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Inserisci<sp/>l&apos;elemento<sp/>da<sp/>sostituire:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_input_output_8c_1a22bbc787309e15c25f5f5ff52c6f87e9" kindref="member">acquisisciStringa</ref>(daSostituire);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Elemento<sp/>da<sp/>sostituire<sp/>inserito&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Inserisci<sp/>l&apos;elemento<sp/>che<sp/>vuoi<sp/>inserire:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_input_output_8c_1a22bbc787309e15c25f5f5ff52c6f87e9" kindref="member">acquisisciStringa</ref>(daInserire);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Secondo<sp/>elemento<sp/>inserito&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Se<sp/>la<sp/>pila<sp/>non<sp/>è popolata<sp/>prende<sp/>quella<sp/>letta<sp/>da<sp/>file,<sp/>altrimenti<sp/>la<sp/>pila<sp/>aggiornata</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pilaSostituita<sp/>!=<sp/>NULL){</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pilaSostituita<sp/>=<sp/><ref refid="_funzioni_8c_1a58bad8ca508eebb0e11542f293215213" kindref="member">sostituisci</ref>(&amp;pilaSostituita,<sp/>daSostituire,<sp/>daInserire);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pilaSostituita<sp/>=<sp/><ref refid="_funzioni_8c_1a58bad8ca508eebb0e11542f293215213" kindref="member">sostituisci</ref>(&amp;pila,<sp/>daSostituire,<sp/>daInserire);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Operazione<sp/>di<sp/>sostituzione<sp/>effettuata&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a96e75ff208f3c092478847945f49137d" kindref="member">scriviFileFormattato</ref>(</highlight><highlight class="stringliteral">&quot;Sostituisci.txt&quot;</highlight><highlight class="normal">,pilaSostituita);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Operazione<sp/>di<sp/>formattazione<sp/>effettuata&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\tPila<sp/>Originale&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" kindref="member">stampaPila</ref>(pila);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\tPila<sp/>Sostituita&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" kindref="member">stampaPila</ref>(pilaSostituita);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;pause&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Fine<sp/>scrittura<sp/>e<sp/>modifica<sp/>del<sp/>file<sp/>Sostituisci.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Scelta<sp/>3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_difensiva_8c_1a5fee0100cdbdb4d08c2186c1762ce801" kindref="member">pulisciFile</ref>(</highlight><highlight class="stringliteral">&quot;Ordina.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Premi<sp/>|1|<sp/>per<sp/>ordinare<sp/>in<sp/>modo<sp/>crescente\nPremi<sp/>|2|<sp/>per<sp/>ordinare<sp/>in<sp/>modo<sp/>decrescente\nScrivi<sp/>qui<sp/>--&gt;<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,&amp;scelta);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(scelta)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pilaSostituita<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pilaOrdinata<sp/>=<sp/><ref refid="_funzioni_8c_1a2e1889b0fa0a7ab25a627c7c1135b43a" kindref="member">bubbleSortRicorsivo</ref>(&amp;pila);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pilaOrdinata<sp/>=<sp/><ref refid="_funzioni_8c_1a2e1889b0fa0a7ab25a627c7c1135b43a" kindref="member">bubbleSortRicorsivo</ref>(&amp;pilaSostituita);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Operazione<sp/>di<sp/>ordinamento<sp/>effettuata&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a96e75ff208f3c092478847945f49137d" kindref="member">scriviFileFormattato</ref>(</highlight><highlight class="stringliteral">&quot;Ordina.txt&quot;</highlight><highlight class="normal">,<sp/>pila);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Operazione<sp/>di<sp/>formattazione<sp/>effettuata&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Ordina<sp/>crescente&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" kindref="member">stampaPila</ref>(pilaOrdinata);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pilaSostituita<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pilaOrdinata<sp/>=<sp/><ref refid="_funzioni_8c_1a2e1889b0fa0a7ab25a627c7c1135b43a" kindref="member">bubbleSortRicorsivo</ref>(&amp;pila);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pila_8c_1a6950fe96e75654670b24ae382d0b74ec" kindref="member">invertiPila</ref>(&amp;pilaOrdinata);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pilaOrdinata<sp/>=<sp/><ref refid="_funzioni_8c_1a2e1889b0fa0a7ab25a627c7c1135b43a" kindref="member">bubbleSortRicorsivo</ref>(&amp;pilaSostituita);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pila_8c_1a6950fe96e75654670b24ae382d0b74ec" kindref="member">invertiPila</ref>(&amp;pilaOrdinata);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a96e75ff208f3c092478847945f49137d" kindref="member">scriviFileFormattato</ref>(</highlight><highlight class="stringliteral">&quot;Ordina.txt&quot;</highlight><highlight class="normal">,<sp/>pilaOrdinata);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Ordina<sp/>decrescente&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_pila_8c_1ab9a9228746dd5426b6b9ffa2b346ebb1" kindref="member">stampaPila</ref>(pilaOrdinata);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Fine<sp/>scrittura<sp/>e<sp/>modifica<sp/>del<sp/>file<sp/>Ordina.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;|ERRORE|<sp/>-<sp/>Scelta<sp/>%d<sp/>non<sp/>ammessa!&quot;</highlight><highlight class="normal">,<sp/>scelta);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Scelta<sp/>non<sp/>ammessa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(scelta!=1<sp/>&amp;&amp;<sp/>scelta!=2);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;pause&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Scelta<sp/>4&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_input_output_8c_1a366895b082490fb1505481432fa1cb05" kindref="member">visualizzaChiusura</ref>();</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;|ERRORE|<sp/>-<sp/>Scelta<sp/>%d<sp/>non<sp/>ammessa!&quot;</highlight><highlight class="normal">,scelta);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Chisura<sp/>forzata<sp/>scelta<sp/>non<sp/>consentita&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(scelta<sp/>!=<sp/>4);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>free(pila);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>free(pilaSostituita);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>free(pilaOrdinata);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gestione___file_8c_1a62b0996e46a5853c3937354c84e153c6" kindref="member">scrivi_log</ref>(</highlight><highlight class="stringliteral">&quot;Rilascio<sp/>della<sp/>memoria&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="_input_output_8c_1a49e4222793afb123ae9a290b87c829f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="_input_output_8c_1a49e4222793afb123ae9a290b87c829f2" kindref="member">acquisisciNomeFile</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>nomeFile)<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Inserisci<sp/>il<sp/>nome<sp/>del<sp/>file<sp/>di<sp/>input<sp/>(estensione<sp/>.txt):<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%49s&quot;</highlight><highlight class="normal">,<sp/>nomeFile);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!<ref refid="_difensiva_8c_1a794ce04c28daadf80d72788064d326aa" kindref="member">validatore_file</ref>(nomeFile));</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nomeFile;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="_input_output_8c_1a22bbc787309e15c25f5f5ff52c6f87e9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="_input_output_8c_1a22bbc787309e15c25f5f5ff52c6f87e9" kindref="member">acquisisciStringa</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str)<sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,str);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_difensiva_8c_1a631d4f696e52cb1c67a3756a7fa86fd7" kindref="member">controlloStringa</ref>(str);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>str;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/InputOutput.c"/>
+  </compounddef>
+</doxygen>

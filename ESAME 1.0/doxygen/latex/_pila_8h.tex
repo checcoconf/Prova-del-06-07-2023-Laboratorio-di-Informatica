@@ -1,0 +1,112 @@
+\doxysection{Riferimenti per il file Pila.\+h}
+\label{_pila_8h}\index{Pila.h@{Pila.h}}
+
+
+Questo file include tutti i prototipi di gestione della pila.  
+
+
+\doxysubsubsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Pila}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Ridefinizioni di tipo (typedef)}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \textbf{ Pila} \textbf{ Pila}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ push} (\textbf{ Pila} $\ast$$\ast$, const char[$\,$])
+\item 
+void \textbf{ stampa\+Pila} (\textbf{ Pila} $\ast$)
+\item 
+void \textbf{ inverti\+Pila} (\textbf{ Pila} $\ast$$\ast$)
+\item 
+void \textbf{ svuota\+Pila} (\textbf{ Pila} $\ast$$\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Questo file include tutti i prototipi di gestione della pila. 
+
+\begin{DoxyVersion}{Versione}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+06/07/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autori}
+Calabrese lorenzo 
+
+Cappelluti Claudia Antonia 
+
+Conforti Francesco /$\ast$$\ast$
+\end{DoxyAuthor}
+SIZE\+\_\+\+PILA definisce la dimensione del dato char della struct 
+
+\doxysubsection{Documentazione delle ridefinizioni di tipo (typedef)}
+\label{_pila_8h_a6b296460996e4bf880d4dab13fab46a6} 
+\index{Pila.h@{Pila.h}!Pila@{Pila}}
+\index{Pila@{Pila}!Pila.h@{Pila.h}}
+\doxysubsubsection{Pila}
+{\footnotesize\ttfamily typedef struct \textbf{ Pila} \textbf{ Pila}}
+
+typedef struct \doxyref{Pila}{pag.}{struct_pila} definisce una struttura di tipo Stack 
+
+\doxysubsection{Documentazione delle funzioni}
+\label{_pila_8h_aecdf4a65c9806d97e17d55517e03b0c8} 
+\index{Pila.h@{Pila.h}!invertiPila@{invertiPila}}
+\index{invertiPila@{invertiPila}!Pila.h@{Pila.h}}
+\doxysubsubsection{invertiPila()}
+{\footnotesize\ttfamily void inverti\+Pila (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{pila\+Passata }\end{DoxyParamCaption})}
+
+inverti\+Pila inverte la pila ricevuta come parametro
+
+inverti\+Pila 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Passata} & e\textquotesingle{} un puntatore al puntatore della \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il puntatore alla pila non deve essere NULL 
+\end{DoxyPrecond}
+\label{_pila_8h_af9a5f4e60bb9f1b66a793a4644d488bc} 
+\index{Pila.h@{Pila.h}!push@{push}}
+\index{push@{push}!Pila.h@{Pila.h}}
+\doxysubsubsection{push()}
+{\footnotesize\ttfamily void push (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{,  }\item[{const char}]{[$\,$] }\end{DoxyParamCaption})}
+
+push inserisce un nuova stringa al top della pila \label{_pila_8h_a4d63695975cceb3b2228cfaa1cee5568} 
+\index{Pila.h@{Pila.h}!stampaPila@{stampaPila}}
+\index{stampaPila@{stampaPila}!Pila.h@{Pila.h}}
+\doxysubsubsection{stampaPila()}
+{\footnotesize\ttfamily void stampa\+Pila (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$}]{pila\+Corrente }\end{DoxyParamCaption})}
+
+stampa\+Pila e\textquotesingle{} una procedura in grado di stampare la pila ricevuta come parametro
+
+stampa\+Pila 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Corrente} & e\textquotesingle{} un puntatore che punta alla pila \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il puntatore alla pila non deve essere NULL 
+\end{DoxyPrecond}
+\label{_pila_8h_a5326a5f60205eda258e893b7d16a7df9} 
+\index{Pila.h@{Pila.h}!svuotaPila@{svuotaPila}}
+\index{svuotaPila@{svuotaPila}!Pila.h@{Pila.h}}
+\doxysubsubsection{svuotaPila()}
+{\footnotesize\ttfamily void svuota\+Pila (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{pila }\end{DoxyParamCaption})}
+
+svuota\+Pila elimina gli elementi di una pila
+
+svuota\+Pila 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Passata} & e\textquotesingle{} un puntatore al puntatore della \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il puntatore alla pila non deve essere NULL 
+\end{DoxyPrecond}

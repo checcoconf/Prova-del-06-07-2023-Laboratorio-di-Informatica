@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="it">
+  <compounddef id="struct_pila" kind="struct" language="C++" prot="public">
+    <compoundname>Pila</compoundname>
+    <includes refid="_pila_8h" local="no">Pila.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dato[SIZE_PILA]</definition>
+        <argsstring>[SIZE_PILA]</argsstring>
+        <name>dato</name>
+        <qualifiedname>Pila::dato</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.h" line="24" column="10" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct_pila" kindref="compound">Pila</ref> *</type>
+        <definition>struct Pila* nextPtr</definition>
+        <argsstring></argsstring>
+        <name>nextPtr</name>
+        <qualifiedname>Pila::nextPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.h" line="25" column="16" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>typedef struct <ref refid="struct_pila" kindref="compound">Pila</ref> definisce una struttura di tipo Stack </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Pila</label>
+        <link refid="struct_pila"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>nextPtr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.h" line="23" column="1" bodyfile="C:/Users/franc/Desktop/ESAME 1.0/ESAME 1.0/Pila.h" bodystart="23" bodyend="26"/>
+    <listofallmembers>
+      <member refid="struct_pila_1aa51f190825baa5e4b80aa3a80d06b2ce" prot="public" virt="non-virtual"><scope>Pila</scope><name>dato</name></member>
+      <member refid="struct_pila_1a1885e0e21f2563f74f2a71c5072bff21" prot="public" virt="non-virtual"><scope>Pila</scope><name>nextPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Calabrese_Cappelluti_Conforti:  File sorgente InputOutput.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Calabrese_Cappelluti_Conforti
+   </div>
+   <div id="projectbrief">Gestione  di stringhe su uno stack</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_input_output_8c_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">InputOutput.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_input_output_8c.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_header_8h.html">Header.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_pila_8h.html">Pila.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_input_output_8h.html">InputOutput.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_gestione___file_8h.html">Gestione_File.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_difensiva_8h.html">Difensiva.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_funzioni_8h.html">Funzioni.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="_input_output_8c.html#a6da1f8f2c60eeba4f5105a45202fb637">    8</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_input_output_8c.html#a6da1f8f2c60eeba4f5105a45202fb637">Benvenuto</a>() {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">char</span> nomeFile[<a class="code hl_define" href="_header_8h.html#adb6bba367ed4fc2c16ca58de84a34447">SIZE_NOME_FILE</a>];</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_struct" href="struct_pila.html">Pila</a>* P = NULL;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    puts(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    puts(<span class="stringliteral">&quot; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    puts(<span class="stringliteral">&quot; ||                                                                                                              ||&quot;</span>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    puts(<span class="stringliteral">&quot; ||                                          B E N V E N U T O !                                                 ||&quot;</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    puts(<span class="stringliteral">&quot; ||                                                                                                              ||&quot;</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    puts(<span class="stringliteral">&quot; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>     <a class="code hl_function" href="_gestione___file_8c.html#a2876fce7ec0bafb317cba4d6bc365f5d">leggiFile</a>(<a class="code hl_function" href="_input_output_8c.html#a49e4222793afb123ae9a290b87c829f2">acquisisciNomeFile</a>(nomeFile),&amp;P);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>     <a class="code hl_function" href="_pila_8c.html#a6950fe96e75654670b24ae382d0b74ec">invertiPila</a>(&amp;P);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>     <span class="comment">//sostituisci(P,&quot;una&quot;,&quot;UNA&quot;);</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>     <a class="code hl_function" href="_pila_8c.html#ab9a9228746dd5426b6b9ffa2b346ebb1">stampaPila</a>(P);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>     <a class="code hl_function" href="_gestione___file_8c.html#aa3dfa8e5948cdb26435f0004d1396593">scriviFile</a>(<span class="stringliteral">&quot;../Sostituisci.txt&quot;</span>,<a class="code hl_function" href="_pila_8c.html#aabb031042b94b33bca8c0656d2af2469">formattaCaratteri</a>(P));</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>     <a class="code hl_function" href="_pila_8c.html#a8d3503ea0e3ec93d1e9c27bceff63cbb">distruggiPila</a>(&amp;P);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_input_output_8c.html#a49e4222793afb123ae9a290b87c829f2">   28</a></span><span class="keywordtype">char</span>* <a class="code hl_function" href="_input_output_8c.html#a49e4222793afb123ae9a290b87c829f2">acquisisciNomeFile</a>(<span class="keywordtype">char</span>* nomeFile) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        printf(<span class="stringliteral">&quot;Inserisci il nome del file di input (estensione .txt): &quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        scanf(<span class="stringliteral">&quot;%49s&quot;</span>, nomeFile);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    } <span class="keywordflow">while</span>(!<a class="code hl_function" href="_difensiva_8c.html#a794ce04c28daadf80d72788064d326aa">validatore_file</a>(nomeFile));</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> nomeFile;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_input_output_8c.html#a22bbc787309e15c25f5f5ff52c6f87e9">   37</a></span><span class="keywordtype">char</span>* <a class="code hl_function" href="_input_output_8c.html#a22bbc787309e15c25f5f5ff52c6f87e9">acquisisciStringa</a>(<span class="keywordtype">char</span>* str) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    scanf(<span class="stringliteral">&quot;%s&quot;</span>,str);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">//controlloStringa(str);</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="ttc" id="a_difensiva_8c_html_a794ce04c28daadf80d72788064d326aa"><div class="ttname"><a href="_difensiva_8c.html#a794ce04c28daadf80d72788064d326aa">validatore_file</a></div><div class="ttdeci">bool validatore_file(const char *nomeFile)</div><div class="ttdef"><b>Definition</b> <a href="_difensiva_8c_source.html#l00042">Difensiva.c:42</a></div></div>
+<div class="ttc" id="a_difensiva_8h_html"><div class="ttname"><a href="_difensiva_8h.html">Difensiva.h</a></div><div class="ttdoc">Questo file include delle funzioni utili per la programmazione difensiva.</div></div>
+<div class="ttc" id="a_funzioni_8h_html"><div class="ttname"><a href="_funzioni_8h.html">Funzioni.h</a></div><div class="ttdoc">Questo file include delle funzioni di dominio.</div></div>
+<div class="ttc" id="a_gestione___file_8c_html_a2876fce7ec0bafb317cba4d6bc365f5d"><div class="ttname"><a href="_gestione___file_8c.html#a2876fce7ec0bafb317cba4d6bc365f5d">leggiFile</a></div><div class="ttdeci">void leggiFile(const char *nomeFile, Pila **pilaPassata)</div><div class="ttdef"><b>Definition</b> <a href="_gestione___file_8c_source.html#l00036">Gestione_File.c:36</a></div></div>
+<div class="ttc" id="a_gestione___file_8c_html_aa3dfa8e5948cdb26435f0004d1396593"><div class="ttname"><a href="_gestione___file_8c.html#aa3dfa8e5948cdb26435f0004d1396593">scriviFile</a></div><div class="ttdeci">void scriviFile(const char *nomeFile, const char *msg)</div><div class="ttdef"><b>Definition</b> <a href="_gestione___file_8c_source.html#l00076">Gestione_File.c:76</a></div></div>
+<div class="ttc" id="a_gestione___file_8h_html"><div class="ttname"><a href="_gestione___file_8h.html">Gestione_File.h</a></div><div class="ttdoc">Questo file include tutte le funzioni per la gestione del file.</div></div>
+<div class="ttc" id="a_header_8h_html"><div class="ttname"><a href="_header_8h.html">Header.h</a></div><div class="ttdoc">Questo file esegue le seguenti operazioni:  include tutte le librerie di &quot;c&quot; necessarie  definisce la...</div></div>
+<div class="ttc" id="a_header_8h_html_adb6bba367ed4fc2c16ca58de84a34447"><div class="ttname"><a href="_header_8h.html#adb6bba367ed4fc2c16ca58de84a34447">SIZE_NOME_FILE</a></div><div class="ttdeci">#define SIZE_NOME_FILE</div><div class="ttdef"><b>Definition</b> <a href="_header_8h_source.html#l00025">Header.h:25</a></div></div>
+<div class="ttc" id="a_input_output_8c_html_a22bbc787309e15c25f5f5ff52c6f87e9"><div class="ttname"><a href="_input_output_8c.html#a22bbc787309e15c25f5f5ff52c6f87e9">acquisisciStringa</a></div><div class="ttdeci">char * acquisisciStringa(char *str)</div><div class="ttdef"><b>Definition</b> <a href="_input_output_8c_source.html#l00037">InputOutput.c:37</a></div></div>
+<div class="ttc" id="a_input_output_8c_html_a49e4222793afb123ae9a290b87c829f2"><div class="ttname"><a href="_input_output_8c.html#a49e4222793afb123ae9a290b87c829f2">acquisisciNomeFile</a></div><div class="ttdeci">char * acquisisciNomeFile(char *nomeFile)</div><div class="ttdef"><b>Definition</b> <a href="_input_output_8c_source.html#l00028">InputOutput.c:28</a></div></div>
+<div class="ttc" id="a_input_output_8c_html_a6da1f8f2c60eeba4f5105a45202fb637"><div class="ttname"><a href="_input_output_8c.html#a6da1f8f2c60eeba4f5105a45202fb637">Benvenuto</a></div><div class="ttdeci">void Benvenuto()</div><div class="ttdef"><b>Definition</b> <a href="_input_output_8c_source.html#l00008">InputOutput.c:8</a></div></div>
+<div class="ttc" id="a_input_output_8h_html"><div class="ttname"><a href="_input_output_8h.html">InputOutput.h</a></div><div class="ttdoc">Questo file include tutte le funzioni di Input e Output da e verso l'utente.</div></div>
+<div class="ttc" id="a_pila_8c_html_a6950fe96e75654670b24ae382d0b74ec"><div class="ttname"><a href="_pila_8c.html#a6950fe96e75654670b24ae382d0b74ec">invertiPila</a></div><div class="ttdeci">void invertiPila(Pila **pilaPassata)</div><div class="ttdef"><b>Definition</b> <a href="_pila_8c_source.html#l00066">Pila.c:66</a></div></div>
+<div class="ttc" id="a_pila_8c_html_a8d3503ea0e3ec93d1e9c27bceff63cbb"><div class="ttname"><a href="_pila_8c.html#a8d3503ea0e3ec93d1e9c27bceff63cbb">distruggiPila</a></div><div class="ttdeci">void distruggiPila(Pila **pilaPassata)</div><div class="ttdef"><b>Definition</b> <a href="_pila_8c_source.html#l00080">Pila.c:80</a></div></div>
+<div class="ttc" id="a_pila_8c_html_aabb031042b94b33bca8c0656d2af2469"><div class="ttname"><a href="_pila_8c.html#aabb031042b94b33bca8c0656d2af2469">formattaCaratteri</a></div><div class="ttdeci">char * formattaCaratteri(Pila *pila)</div><div class="ttdef"><b>Definition</b> <a href="_pila_8c_source.html#l00092">Pila.c:92</a></div></div>
+<div class="ttc" id="a_pila_8c_html_ab9a9228746dd5426b6b9ffa2b346ebb1"><div class="ttname"><a href="_pila_8c.html#ab9a9228746dd5426b6b9ffa2b346ebb1">stampaPila</a></div><div class="ttdeci">void stampaPila(Pila *pilaCorrente)</div><div class="ttdef"><b>Definition</b> <a href="_pila_8c_source.html#l00052">Pila.c:52</a></div></div>
+<div class="ttc" id="a_pila_8h_html"><div class="ttname"><a href="_pila_8h.html">Pila.h</a></div><div class="ttdoc">Questo file include tutte le funzioni di gestione della pila.</div></div>
+<div class="ttc" id="astruct_pila_html"><div class="ttname"><a href="struct_pila.html">Pila</a></div><div class="ttdef"><b>Definition</b> <a href="_pila_8h_source.html#l00025">Pila.h:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_input_output_8c.html">InputOutput.c</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

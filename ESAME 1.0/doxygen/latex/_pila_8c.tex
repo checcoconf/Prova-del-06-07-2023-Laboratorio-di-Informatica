@@ -1,0 +1,99 @@
+\doxysection{Riferimenti per il file Pila.\+c}
+\label{_pila_8c}\index{Pila.c@{Pila.c}}
+
+
+Questo file include tutte le funzioni di gestione della pila.  
+
+
+{\ttfamily \#include \"{}Header.\+h\"{}}\newline
+{\ttfamily \#include \"{}Pila.\+h\"{}}\newline
+\doxysubsubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ push} (\textbf{ Pila} $\ast$$\ast$pila\+Passata, const char $\ast$dato)
+\item 
+void \textbf{ stampa\+Pila} (\textbf{ Pila} $\ast$pila\+Corrente)
+\item 
+void \textbf{ inverti\+Pila} (\textbf{ Pila} $\ast$$\ast$pila\+Passata)
+\item 
+void \textbf{ svuota\+Pila} (\textbf{ Pila} $\ast$$\ast$pila)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Questo file include tutte le funzioni di gestione della pila. 
+
+\begin{DoxyVersion}{Versione}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+06/07/2023 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autori}
+Calabrese lorenzo 
+
+Cappelluti Claudia Antonia 
+
+Conforti Francesco /$\ast$$\ast$
+\end{DoxyAuthor}
+/$\ast$$\ast$ Push 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Passata} & e\textquotesingle{} un puntatore al puntatore della \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\mbox{\texttt{ in}}  & {\em $\ast$dato} & e\textquotesingle{} una stringa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il puntatore alla pila non deve essere NULL 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\label{_pila_8c_a6950fe96e75654670b24ae382d0b74ec} 
+\index{Pila.c@{Pila.c}!invertiPila@{invertiPila}}
+\index{invertiPila@{invertiPila}!Pila.c@{Pila.c}}
+\doxysubsubsection{invertiPila()}
+{\footnotesize\ttfamily void inverti\+Pila (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{pila\+Passata }\end{DoxyParamCaption})}
+
+inverti\+Pila 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Passata} & e\textquotesingle{} un puntatore al puntatore della \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il puntatore alla pila non deve essere NULL 
+\end{DoxyPrecond}
+\label{_pila_8c_a1a4a58a2d8307f5ae1d19530276b3aa8} 
+\index{Pila.c@{Pila.c}!push@{push}}
+\index{push@{push}!Pila.c@{Pila.c}}
+\doxysubsubsection{push()}
+{\footnotesize\ttfamily void push (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{pila\+Passata,  }\item[{const char $\ast$}]{dato }\end{DoxyParamCaption})}
+
+\label{_pila_8c_ab9a9228746dd5426b6b9ffa2b346ebb1} 
+\index{Pila.c@{Pila.c}!stampaPila@{stampaPila}}
+\index{stampaPila@{stampaPila}!Pila.c@{Pila.c}}
+\doxysubsubsection{stampaPila()}
+{\footnotesize\ttfamily void stampa\+Pila (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$}]{pila\+Corrente }\end{DoxyParamCaption})}
+
+stampa\+Pila 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Corrente} & e\textquotesingle{} un puntatore che punta alla pila \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il puntatore alla pila non deve essere NULL 
+\end{DoxyPrecond}
+\label{_pila_8c_aa98f13b874d7e30dce74c58f0424e2d8} 
+\index{Pila.c@{Pila.c}!svuotaPila@{svuotaPila}}
+\index{svuotaPila@{svuotaPila}!Pila.c@{Pila.c}}
+\doxysubsubsection{svuotaPila()}
+{\footnotesize\ttfamily void svuota\+Pila (\begin{DoxyParamCaption}\item[{\textbf{ Pila} $\ast$$\ast$}]{pila }\end{DoxyParamCaption})}
+
+svuota\+Pila 
+\begin{DoxyParams}[1]{Parametri}
+\mbox{\texttt{ in}}  & {\em $\ast$pila\+Passata} & e\textquotesingle{} un puntatore al puntatore della \doxyref{Pila}{pag.}{struct_pila} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondizione}
+Il puntatore alla pila non deve essere NULL 
+\end{DoxyPrecond}

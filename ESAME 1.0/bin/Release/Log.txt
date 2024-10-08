@@ -1,0 +1,120 @@
+
+[2023-07-08 10:40:36] Avvio applicazione
+[2023-07-08 10:40:41] Scelta 4
+[2023-07-08 10:40:44] Chiusura
+[2023-07-08 10:42:25] Avvio applicazione
+[2023-07-08 10:42:30] Scelta 1
+[2023-07-08 10:42:32] Inizio lettura file Input.txt
+[2023-07-08 10:42:34] Fine lettura file Input.txt
+[2023-07-08 10:42:36] Scelta 3
+[2023-07-08 10:42:36] Operazione di ordinamento effettuata
+[2023-07-08 10:42:36] Operazione di formattazione effettuata
+[2023-07-08 10:42:38] Scelta 3
+[2023-07-08 10:42:39] Fine scrittura e modifica del file Ordina.txt
+[2023-07-08 10:42:42] Scelta 4
+[2023-07-08 10:42:45] Chiusura
+[2023-07-08 19:17:04] Avvio applicazione
+[2023-07-08 19:17:06] Scelta 1
+[2023-07-08 19:17:12] Inizio lettura file Input.txt
+[2023-07-08 19:17:13] Fine lettura file Input.txt
+[2023-07-08 19:17:15] Scelta 3
+[2023-07-08 19:17:15] Operazione di ordinamento effettuata
+[2023-07-08 19:17:15] Operazione di formattazione effettuata
+[2023-07-08 19:17:19] Scelta 3
+[2023-07-08 19:17:20] Fine scrittura e modifica del file Ordina.txt
+[2023-07-08 19:17:25] Scelta 4
+[2023-07-08 19:17:28] Chiusura
+[2023-07-08 19:18:12] Avvio applicazione
+[2023-07-08 19:18:14] Scelta 1
+[2023-07-08 19:18:18] Inizio lettura file Input.txt
+[2023-07-08 19:18:21] Fine lettura file Input.txt
+[2023-07-08 19:18:22] Scelta 2
+[2023-07-08 19:18:30] Elemento da sostituire inserito
+[2023-07-08 19:18:36] Secondo elemento inserito
+[2023-07-08 19:18:36] Operazione di sostituzione effettuata
+[2023-07-08 19:18:36] Operazione di formattazione effettuata
+[2023-07-08 19:18:39] Fine scrittura e modifica del file Sostituisci.txt
+[2023-07-08 19:18:41] Scelta 3
+[2023-07-08 19:18:42] Operazione di ordinamento effettuata
+[2023-07-08 19:18:42] Operazione di formattazione effettuata
+[2023-07-08 19:18:46] Scelta 3
+[2023-07-08 19:18:52] Avvio applicazione
+[2023-07-08 19:18:56] Pila vuota
+[2023-07-08 19:18:57] Scelta 1
+[2023-07-08 19:19:00] Inizio lettura file Input.txt
+[2023-07-08 19:19:01] Fine lettura file Input.txt
+[2023-07-08 19:19:03] Scelta 3
+[2023-07-08 19:19:24] Avvio applicazione
+[2023-07-08 19:19:26] Scelta 1
+[2023-07-08 19:19:34] Inizio lettura file Input.txt
+[2023-07-08 19:19:36] Fine lettura file Input.txt
+[2023-07-08 19:19:36] Scelta 3
+[2023-07-08 19:19:37] Operazione di ordinamento effettuata
+[2023-07-08 19:19:37] Operazione di formattazione effettuata
+[2023-07-08 19:19:41] Scelta 3
+[2023-07-08 19:20:01] Avvio applicazione
+[2023-07-08 19:20:05] Scelta 1
+[2023-07-08 19:20:07] Inizio lettura file Input.txt
+[2023-07-08 19:20:10] Fine lettura file Input.txt
+[2023-07-08 19:20:12] Scelta 3
+[2023-07-08 19:20:13] Operazione di ordinamento effettuata
+[2023-07-08 19:20:13] Operazione di formattazione effettuata
+[2023-07-08 19:20:14] Scelta 3
+[2023-07-08 19:20:15] Fine scrittura e modifica del file Ordina.txt
+[2023-07-08 19:20:20] Scelta 4
+[2023-07-08 19:20:23] Chiusura
+[2023-07-08 19:21:41] Avvio applicazione
+[2023-07-08 19:21:44] Scelta 1
+[2023-07-08 19:21:47] Inizio lettura file Input.txt
+[2023-07-08 19:21:48] Fine lettura file Input.txt
+[2023-07-08 19:21:49] Scelta 3
+[2023-07-08 19:21:49] Operazione di ordinamento effettuata
+[2023-07-08 19:21:49] Operazione di formattazione effettuata
+[2023-07-08 19:21:52] Scelta 3
+[2023-07-08 19:21:52] Fine scrittura e modifica del file Ordina.txt
+[2023-07-08 19:22:33] Scelta 4
+[2023-07-08 19:22:36] Chiusura
+[2023-07-08 19:23:03] Avvio applicazione
+[2023-07-08 19:23:05] Scelta 1
+[2023-07-08 19:23:07] Inizio lettura file Input.txt
+[2023-07-08 19:23:08] Fine lettura file Input.txt
+[2023-07-08 19:23:09] Scelta 3
+[2023-07-08 19:23:10] Operazione di ordinamento effettuata
+[2023-07-08 19:23:10] Operazione di formattazione effettuata
+[2023-07-08 19:23:11] Scelta 3
+[2023-07-08 19:23:37] Avvio applicazione
+[2023-07-08 19:23:39] Scelta 1
+[2023-07-08 19:23:41] Inizio lettura file Input.txt
+[2023-07-08 19:23:43] Fine lettura file Input.txt
+[2023-07-08 19:23:45] Scelta 3
+[2023-07-08 19:23:46] Fine scrittura e modifica del file Ordina.txt
+[2023-07-08 19:23:48] Scelta 3
+[2023-07-08 19:23:49] Fine scrittura e modifica del file Ordina.txt
+[2023-07-08 19:23:50] Scelta 3
+[2023-07-08 19:23:51] Operazione di ordinamento effettuata
+[2023-07-08 19:23:51] Operazione di formattazione effettuata
+[2023-07-08 19:23:52] Scelta 3
+[2023-07-08 19:23:53] Fine scrittura e modifica del file Ordina.txt
+[2023-07-08 19:23:56] Scelta 2
+[2023-07-08 19:24:00] Elemento da sostituire inserito
+[2023-07-08 19:24:06] Secondo elemento inserito
+[2023-07-08 19:24:06] Operazione di sostituzione effettuata
+[2023-07-08 19:24:06] Operazione di formattazione effettuata
+[2023-07-08 19:24:09] Fine scrittura e modifica del file Sostituisci.txt
+[2023-07-08 19:24:10] Scelta 3
+[2023-07-08 19:24:10] Operazione di ordinamento effettuata
+[2023-07-08 19:24:10] Operazione di formattazione effettuata
+[2023-07-08 19:24:12] Scelta 3
+[2023-07-08 19:24:13] Fine scrittura e modifica del file Ordina.txt
+[2023-07-08 19:24:15] Scelta 4
+[2023-07-08 19:24:18] Chiusura
+[2023-07-08 19:24:47] Avvio applicazione
+[2023-07-08 19:24:49] Scelta 1
+[2023-07-08 19:25:04] Avvio applicazione
+[2023-07-08 19:25:12] Scelta 1
+[2023-07-08 19:25:25] Avvio applicazione
+[2023-07-08 19:25:26] Scelta 1
+[2023-07-08 19:25:29] Inizio lettura file Input.txt
+[2023-07-08 19:25:30] Fine lettura file Input.txt
+[2023-07-08 19:25:31] Scelta 4
+[2023-07-08 19:25:34] Chiusura

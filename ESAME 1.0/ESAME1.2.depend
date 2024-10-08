@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1688776336 source:c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\inputoutput.c
+	"Header.h"
+	"Pila.h"
+	"InputOutput.h"
+	"Gestione_File.h"
+	"Difensiva.h"
+	"Funzioni.h"
+
+1688775474 c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	<conio.h>
+	<ctype.h>
+	<time.h>
+	<unistd.h>
+
+1688775474 c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\pila.h
+
+1688775612 c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\inputoutput.h
+	"Header.h"
+	"Pila.h"
+
+1688775474 c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\gestione_file.h
+	"Header.h"
+	"Pila.h"
+
+1688775474 c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\difensiva.h
+	"header.h"
+
+1688775474 c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\funzioni.h
+	"header.h"
+	"Pila.h"
+
+1688775474 source:c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\main.c
+	"InputOutput.h"
+	"Pila.h"
+	"Gestione_File.h"
+
+1688775735 source:c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\pila.c
+	"Header.h"
+	"Pila.h"
+
+1688775474 source:c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\funzioni.c
+	"header.h"
+	"Funzioni.h"
+	"InputOutput.h."
+	"Pila.h"
+
+1688775474 source:c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\gestione_file.c
+	"Header.h"
+	"Pila.h"
+	"Gestione_File.h"
+	"Difensiva.h"
+
+1688775474 source:c:\users\hp 150224\onedrive\desktop\laboratorio di informatica\esame1.2\difensiva.c
+	"Difensiva.h"
+	"Gestione_File.h"
+
+1688776953 source:c:\users\franc\desktop\esame 1.1\esame1.2\difensiva.c
+	"Difensiva.h"
+	"Gestione_File.h"
+
+1688776953 c:\users\franc\desktop\esame 1.1\esame1.2\difensiva.h
+	"header.h"
+
+1688776953 c:\users\franc\desktop\esame 1.1\esame1.2\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	<conio.h>
+	<ctype.h>
+	<time.h>
+	<unistd.h>
+
+1688776953 c:\users\franc\desktop\esame 1.1\esame1.2\gestione_file.h
+	"Header.h"
+	"Pila.h"
+
+1688776953 c:\users\franc\desktop\esame 1.1\esame1.2\pila.h
+
+1688776953 source:c:\users\franc\desktop\esame 1.1\esame1.2\funzioni.c
+	"header.h"
+	"Funzioni.h"
+	"InputOutput.h."
+	"Pila.h"
+
+1688776953 c:\users\franc\desktop\esame 1.1\esame1.2\funzioni.h
+	"header.h"
+	"Pila.h"
+
+1688776953 source:c:\users\franc\desktop\esame 1.1\esame1.2\inputoutput.c
+	"Header.h"
+	"Pila.h"
+	"InputOutput.h"
+	"Gestione_File.h"
+	"Difensiva.h"
+	"Funzioni.h"
+
+1688776953 c:\users\franc\desktop\esame 1.1\esame1.2\inputoutput.h
+	"Header.h"
+	"Pila.h"
+
+1688776953 source:c:\users\franc\desktop\esame 1.1\esame1.2\main.c
+	"InputOutput.h"
+	"Pila.h"
+	"Gestione_File.h"
+
+1688776953 source:c:\users\franc\desktop\esame 1.1\esame1.2\pila.c
+	"Header.h"
+	"Pila.h"
+
+1688777206 source:c:\users\franc\desktop\esame 1.1\esame1.2\gestione_file.c
+	"Header.h"
+	"Pila.h"
+	"Gestione_File.h"
+	"Difensiva.h"
+
