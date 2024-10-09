@@ -36,6 +36,9 @@
   - **[obj](https://github.com/checcoconf/Prova-del-06-07-2023-Laboratorio-di-Informatica/tree/main/ESAME%201.0/obj)**:
     - Include file oggetto (*.o) generati per ciascun file sorgente, suddivisi nelle cartelle **[Debug](https://github.com/checcoconf/Prova-del-06-07-2023-Laboratorio-di-Informatica/tree/main/ESAME%201.0/obj/Debug)** e **[Release](https://github.com/checcoconf/Prova-del-06-07-2023-Laboratorio-di-Informatica/tree/main/ESAME%201.0/obj/Release)**.
 
+## Linguaggio usato
+<code><img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C"/>
+
 ## IDE Utilizzato
 <code><img alt="Code::Blocks" width="40px" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Codeblocks_logo.png"/></code>
 
