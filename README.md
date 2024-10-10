@@ -4,7 +4,7 @@
 
 ### Informatica e Tecnologie per la Produzione del Software AL
 
-# Repository Prova del 06/07/2023 Laboratorio di INformatica
+# Prova del 06/07/2023 Laboratorio di Informatica
 
 ## Struttura del Repository
 - [Esame 1.0](https://github.com/checcoconf/Prova-del-06-07-2023-Laboratorio-di-Informatica/tree/main/ESAME%201.0) - [Traccia](https://github.com/checcoconf/Prova-del-06-07-2023-Laboratorio-di-Informatica/blob/main/Traccia.pdf)
