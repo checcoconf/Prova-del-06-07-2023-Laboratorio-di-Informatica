@@ -38,8 +38,6 @@
 
 ## Linguaggio e IDE Utilizzato
 
-<div align="center">
-
 | Linguaggio | IDE Utilizzato |
 |:----------:|:--------------:|
 | <code><img alt="C" width="40px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" /></code> | <code><img alt="Code::Blocks" width="40px" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Codeblocks_logo.png" /></code> |
